@@ -8,6 +8,7 @@
             </v-card-title>
             <v-card-text sm10 offset-sm1 xs12>
                 <v-container fluid
+                
                              grid-list-md>
                     <v-layout row wrap>
                         Driving  Instructions:
