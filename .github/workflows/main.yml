@@ -17,4 +17,6 @@ jobs:
           - name: Set Creds
             run: git config user.name "tyler.hadx@gmail.com" && git config user.email "tyler.hadx@gmail.com"
           - name: Deploy
-            run: npm run deploy
+            run: |
+                    cd dakotatropyadventures
+                    npm run deploy
