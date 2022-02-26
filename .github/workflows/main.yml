@@ -18,5 +18,5 @@ jobs:
             run: git config user.name "tyler.hadx@gmail.com" && git config user.email "tyler.hadx@gmail.com"
           - name: Deploy
             run: |
-                    cd dakotatropyadventures
+                    cd tree/main/dakotatrophyadventures
                     npm run deploy
