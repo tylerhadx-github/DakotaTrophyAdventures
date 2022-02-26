@@ -18,4 +18,4 @@ jobs:
             run: git config user.name "tyler.hadx@gmail.com" && git config user.email "tyler.hadx@gmail.com"
           - name: Deploy
             working-directory: ./dakotatrophyadventures
-            run: npm run deploy
+            run: npm run build
