@@ -12,11 +12,14 @@ jobs:
           - uses: actions/setup-node@v2
             with:
               node-version: '12'
-          - name: Install packages
-            working-directory: ./dakotatrophyadventures
-            run: npm i
           - name: Set Creds
             run: git config user.name "tyler.hadx@gmail.com" && git config user.email "tyler.hadx@gmail.com"
+          - name: Remove packages
+            working-directory: ./dakotatrophyadventures
+            run: rm -rf node_modules
+          - name: Install packages
+            working-directory: ./dakotatrophyadventures
+            run: npm install
           - name: Deploy
             working-directory: ./dakotatrophyadventures
             run: npm run deploy
