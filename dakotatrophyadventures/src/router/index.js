@@ -66,6 +66,10 @@ export default new Router({
        component: Home,
    },
    {
+       path: '/DakotaTrophyAdventures',
+       component: Home,
+   },
+   {
        path: '/Hunting',
        name: 'Hunting',
        component: Hunting,
