@@ -34,11 +34,11 @@
                
                 Featured: [
                     {
-                        image: "/img/Deer/Mule%20Deer/Drefke%20MD%201.JPG",
+                        image: "/DakotaTrophyAdventures/img/Deer/Mule%20Deer/Drefke%20MD%201.JPG",
                        
                     },
                     {
-                        image: "/img/Deer/Mule%20Deer/Newmans%20MD%20WT%202.JPG",
+                        image: "/DakotaTrophyAdventures/img/Deer/Mule%20Deer/Newmans%20MD%20WT%202.JPG",
                         title: "History",
                         description: this.History,
                     },
