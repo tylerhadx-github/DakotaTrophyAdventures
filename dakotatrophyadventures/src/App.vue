@@ -72,7 +72,7 @@ export default {
             Ranch: '',
             History: '',
             menuItems: [
-                { title: 'The Ranch'     , path: 'Home'      ,icon:false},
+                { title: 'Home'     , path: 'Home'      ,icon:false},
                 { title: 'Gallery', path: 'Gallerys', icon: false },
                 { title: 'Hunting', path: 'Hunting', icon: false },
                 { title: 'Taxidermy', path: 'Taxidermy', icon: false },
