@@ -5,11 +5,10 @@ Vue.use(Router)
 
 const Contact = () => import(/* webpackChunkName: "contact" */ '@/components/Contact.vue')
 const Home = () => import(/* webpackChunkName: "home" */ '@/components/Home.vue')
-const About = () => import(/* webpackChunkName: "about" */ '@/components/About.vue')
 const Gallery = () => import(/* webpackChunkName: "gallery" */ '@/components/Gallery.vue')
 const Gallerys = () => import(/* webpackChunkName: "gallery" */ '@/components/Gallerys.vue')
 const GalleryItem = () => import(/* webpackChunkName: "gallery-item" */ '@/components/GalleryItem.vue')
-const Dates = () => import(/* webpackChunkName: "dates" */ '@/components/Dates.vue')
+const Reviews = () => import(/* webpackChunkName: "dates" */ '@/components/Reviews.vue')
 const Map = () => import(/* webpackChunkName: "map" */ '@/components/Map.vue')
 const Hunting = () => import(/* webpackChunkName: "hunting" */ '@/components/Hunting.vue')
 const Taxidermy = () => import(/* webpackChunkName: "taxidermy" */ '@/components/Taxidermy.vue')
@@ -51,20 +50,16 @@ export default new Router({
        component: Map,
    },
    {
-       path: '/Dates',
-       name: 'Dates',
-       component: Dates,
+       path: '/Reviews',
+       name: 'Reviews',
+       component: Reviews,
    },
    {
        path: '/',
-       name: 'Home1',
+       name: 'Home',
        component: Home,
    },
-   {
-       path: '/About',
-       name: 'About',
-       component: About,
-   },
+
    {
        path: '/Home',
        name: 'Home',

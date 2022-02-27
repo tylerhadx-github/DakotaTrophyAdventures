@@ -12,6 +12,18 @@
 
         </v-col>
     </v-row>
+    <v-row>
+        <v-col>
+    <v-card>
+        <v-card-title>
+            <h3 class="headline mb-0">About Us</h3>
+        </v-card-title>
+        <v-card-text>
+            <div v-html="AboutUs"></div>
+        </v-card-text>
+    </v-card>
+    </v-col>
+    </v-row>
 </div>
 </template>
 
