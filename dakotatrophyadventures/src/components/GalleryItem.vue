@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import AllImages from "../assets/AllImages";
+import {AllImages} from "../assets/AllImages";
 
   export default {
         name: 'DetailView',
