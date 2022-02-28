@@ -1,18 +1,18 @@
 <template>
  <div style="padding-top:128px">
-    <v-card :height="windowSize.y">
+     <v-row><v-col>
+    <v-card :height="windowSize.y" v-if="!sentMessage">
         <v-card-title>
             <h3 class="headline mb-0">Contact Us</h3>
         </v-card-title>
         <v-card-text>
-            <v-layout align-center justify-center>
 
                 <v-form ref="form"
                         v-model="valid"
                         lazy-validation
                         sx6>
                     <v-text-field v-model="name"
-                                  :counter="10"
+                                  :counter="100"
                                   :rules="nameRules"
                                   label="Name"
                                   required></v-text-field>
@@ -22,36 +22,38 @@
                                   label="E-mail"
                                   required></v-text-field>
 
-                    <v-select v-model="select"
+                    <v-textarea v-model="description"
                               :items="items"
-                              :rules="[v => !!v || 'Item is required']"
                               label="Item"
-                              required></v-select>
+                              required></v-textarea>
 
-                    <v-checkbox v-model="checkbox"
-                                :rules="[v => !!v || 'You must agree to continue!']"
-                                label="Do you agree?"
-                                required></v-checkbox>
+                  
 
                     <v-btn :disabled="!valid"
                            color="success"
                            @click="validate">
-                        Validate
+                        Send
                     </v-btn>
 
-                    <v-btn color="error"
-                           @click="reset">
-                        Reset Form
-                    </v-btn>
-
-                    <v-btn color="warning"
-                           @click="resetValidation">
-                        Reset Validation
-                    </v-btn>
                 </v-form>
+        </v-card-text>
+    </v-card>
+    </v-col></v-row>
+     <v-row><v-col>
+    <v-card :height="windowSize.y" v-if="sentMessage">
+        <v-card-title>
+            <h3 class="headline mb-0">Message Sent</h3>
+        </v-card-title>
+        <v-card-text>
+            <v-layout align-center justify-center>
+                <v-btn color="success"
+                       @click="sentMessage = false">
+                    Back
+                </v-btn>
             </v-layout>
         </v-card-text>
     </v-card>
+    </v-col></v-row>
 </div>
 </template>
 
@@ -67,38 +69,52 @@
             },
             validate() {
                 if (this.$refs.form.validate()) {
-                    this.snackbar = true;
+                    this.sentMessage = false;
+                 var model = {
+                        To: "tyler.hadx@gmail.com",
+            ContactEmail: this.email,
+            Message: this.description,
+            App: "Dakota Trophy Adventures",
+            From: "Contact@DakotaTrophyAdventures.com",
+            Subject: "Dakota Trophy Adventures Contact form.",
+            Name: this.name,
+                 };
+
+
+                 fetch("http://fireemail.gear.host/api/Email",{
+                    method: "POST",
+                    body: JSON.stringify(model),
+                    headers: {
+                        "Content-Type": "application/json"
+                    }   
+                    }).then(function(response) {
+                        return response.json();
+                    }).then(function(data) {
+                      this.sentMessage = true;
+                      console.log(data);
+                    }).catch(function(error) {
+                        console.log(error);
+                    });
                 }
             },
-            reset() {
-                this.$refs.form.reset();
-            },
-            resetValidation() {
-                this.$refs.form.resetValidation();
-            }
+            
         },
         data: function() {
             return {
-
+                sentMessage: false,
                 valid: true,
                 name: '',
                 nameRules: [
                     v => !!v || 'Name is required',
-                    v => (v && v.length <= 10) || 'Name must be less than 10 characters'
+                    v => (v && v.length <= 100) || 'Name must be less than 100 characters'
                 ],
                 email: '',
                 emailRules: [
                     v => !!v || 'E-mail is required',
                     v => /.+@.+/.test(v) || 'E-mail must be valid'
                 ],
-                select: null,
-                items: [
-                    'Item 1',
-                    'Item 2',
-                    'Item 3',
-                    'Item 4'
-                ],
-                checkbox: false
+                description: null,
+                
             };
         },
         mounted: function() {
