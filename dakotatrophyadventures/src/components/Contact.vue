@@ -81,7 +81,7 @@
                  };
 
 
-                 fetch("http://fireemail.gear.host/api/Email",{
+                 fetch("https://fireemail.gear.host/api/Email",{
                     method: "POST",
                     body: JSON.stringify(model),
                     headers: {
