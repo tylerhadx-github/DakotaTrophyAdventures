@@ -5,7 +5,7 @@
                        dark
                        shrink-on-scroll
                        prominent
-                       src="/DakotaTrophyAdventures/huntingbackground.jpg"
+                       src="/huntingbackground.jpg"
                        scroll-target="#scrolling-techniques-3">
                 <template v-slot:img="{ props }">
                     <v-img v-bind="props" style="height:450px"></v-img>
@@ -15,7 +15,7 @@
                 <v-app-bar-title></v-app-bar-title>
 
                 <v-spacer style="width:90%"></v-spacer>
-                    <v-img contain height="100px"  src="/DakotaTrophyAdventures/img/logo.png" @click="goHome()"></v-img>
+                    <v-img contain height="100px"  src="/img/logo.png" @click="goHome()"></v-img>
 
                 <template v-slot:extension class="hidden-sm-and-down">
                     <v-tabs class="hidden-sm-and-down" align-with-title v-for="item in menuItems" :key="item.title">
