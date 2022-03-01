@@ -1,72 +1,100 @@
 <template>
- <div style="padding-top:128px">
-     <v-row><v-col>
-    <v-card :height="windowSize.y" v-if="!sentMessage">
-        <v-card-title>
+  <div style="padding-top: 128px">
+    <v-row
+      ><v-col>
+        <v-card :height="windowSize.y" v-if="!sentMessage">
+          <v-card-title>
             <h3 class="headline mb-0">Contact Us</h3>
-        </v-card-title>
-        <v-card-text>
-
-           <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/meqnkogd" method="post">
-  <fieldset id="fs-frm-inputs">
-    <label for="full-name">Full Name</label>
-    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-    <label for="email-address">Email Address</label>
-    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-    <label for="message">Message</label>
-    <textarea rows="5" name="message" id="message" placeholder="Message" required=""></textarea>
-    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-  </fieldset>
-  <input type="submit" value="Submit">
-</form>
-        </v-card-text>
-    </v-card>
-    </v-col></v-row>
-</div>
+          </v-card-title>
+          <v-card-text>
+            <v-row>
+              <v-col> </v-col>
+            </v-row>
+            <v-row
+              ><v-col>
+                <form
+                  id="fs-frm"
+                  name="simple-contact-form"
+                  accept-charset="utf-8"
+                  action="https://formspree.io/f/meqnkogd"
+                  method="post"
+                >
+                  <fieldset id="fs-frm-inputs">
+                    <label for="full-name">Full Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="full-name"
+                      placeholder="First and Last"
+                      required=""
+                    />
+                    <label for="email-address">Email Address</label>
+                    <input
+                      type="email"
+                      name="_replyto"
+                      id="email-address"
+                      placeholder="email@domain.tld"
+                      required=""
+                    />
+                    <label for="message">Message</label>
+                    <textarea
+                      rows="5"
+                      name="message"
+                      id="message"
+                      placeholder="Message"
+                      required=""
+                    ></textarea>
+                    <input
+                      type="hidden"
+                      name="_subject"
+                      id="email-subject"
+                      value="Contact Form Submission"
+                    />
+                  </fieldset>
+                  <input type="submit" value="Submit" /></form></v-col
+            ></v-row>
+          </v-card-text>
+        </v-card> </v-col
+    ></v-row>
+  </div>
 </template>
 
 <script>
-  export default {
-    name: 'Contact',
-        
-        components: {
+export default {
+  name: "Contact",
 
-        },
-        methods: {
-            getdata() {
-            },
-            validate() {
-               
-            },
-            
-        },
-        data: function() {
-            return {
-                sentMessage: false,
-                valid: true,
-                name: '',
-                nameRules: [
-                    v => !!v || 'Name is required',
-                    v => (v && v.length <= 100) || 'Name must be less than 100 characters'
-                ],
-                email: '',
-                emailRules: [
-                    v => !!v || 'E-mail is required',
-                    v => /.+@.+/.test(v) || 'E-mail must be valid'
-                ],
-                description: null,
-                
-            };
-        },
-        mounted: function() {
-            this.getdata();
-        },
-        computed: {
-            windowSize: function () {
-                return { x: window.innerWidth, y: window.innerHeight };
-            }
-        }
-  }
+  components: {},
+  methods: {
+    getdata() {},
+    validate() {},
+  },
+  data: function () {
+    return {
+      sentMessage: false,
+      valid: true,
+      name: "",
+      nameRules: [
+        (v) => !!v || "Name is required",
+        (v) =>
+          (v && v.length <= 100) || "Name must be less than 100 characters",
+      ],
+      email: "",
+      emailRules: [
+        (v) => !!v || "E-mail is required",
+        (v) => /.+@.+/.test(v) || "E-mail must be valid",
+      ],
+      description: null,
+    };
+  },
+  mounted: function () {
+    this.getdata();
+  },
+  computed: {
+    windowSize: function () {
+      return { x: window.innerWidth, y: window.innerHeight };
+    },
+  },
+};
 </script>
 
 <style>
@@ -92,9 +120,9 @@
 #fs-frm label,
 #fs-frm legend,
 #fs-frm ::placeholder {
-  font-size: .825rem;
-  margin-bottom: .5rem;
-  padding-top: .2rem;
+  font-size: 0.825rem;
+  margin-bottom: 0.5rem;
+  padding-top: 0.2rem;
   display: flex;
   align-items: baseline;
 }
@@ -104,9 +132,9 @@
 #fs-frm select,
 #fs-frm textarea,
 #fs-frm #card-element {
-  border: 1px solid rgba(0,0,0,0.2);
-  background-color: rgba(255,255,255,0.9);
-  padding: .75em 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.75em 1rem;
   margin-bottom: 1.5rem;
 }
 #fs-frm input:focus,
@@ -150,7 +178,7 @@
   appearance: checkbox;
   display: inline-block;
   width: auto;
-  margin: 0 .5em 0 0 !important;
+  margin: 0 0.5em 0 0 !important;
 }
 
 #fs-frm [type="radio"] {
