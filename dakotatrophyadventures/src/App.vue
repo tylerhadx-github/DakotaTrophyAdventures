@@ -4,9 +4,9 @@
                        absolute
                        dark
                        shrink-on-scroll
-                       prominent
+                       
                        src="/huntingbackground.jpg"
-                       scroll-target="#scrolling-techniques-3">
+                       scroll-target="#scrolling-techniques-2">
                 <template v-slot:img="{ props }">
                     <v-img v-bind="props" style="height:450px"></v-img>
 
@@ -14,8 +14,8 @@
                 <v-app-bar-nav-icon class="hidden-md-and-up" @click="sidebar = !sidebar"></v-app-bar-nav-icon>
                 <v-app-bar-title></v-app-bar-title>
 
-                <v-spacer style="width:90%"></v-spacer>
-                    <v-img contain height="100px"  src="/img/logo.png" @click="goHome()"></v-img>
+                <v-spacer style="width:95%"></v-spacer>
+                    <v-img contain height="100px" style="background-position: center right !important"  src="/img/logo.png" @click="goHome()"></v-img>
 
                 <template v-slot:extension class="hidden-sm-and-down">
                     <v-tabs class="hidden-sm-and-down" align-with-title v-for="item in menuItems" :key="item.title">
@@ -38,7 +38,7 @@
                     </v-list-item>
                 </v-list>
             </v-navigation-drawer>
-    <v-main>
+    <v-main id="scrolling-techniques-">
       <router-view></router-view>
     </v-main>
   </v-app>
@@ -127,3 +127,9 @@ export default {
         },
 };
 </script>
+<style>
+
+.v-image__image--contain {
+    background-position: center right !important;
+}
+</style>

@@ -21,6 +21,7 @@
                                     <v-card-text>
                                         <v-img :src="i.url"
                                                aspect-ratio="1"
+                                               @click="openItem(i.galleryId)"
                                                class="grey lighten-2">
                                             </v-img>
                                     </v-card-text>

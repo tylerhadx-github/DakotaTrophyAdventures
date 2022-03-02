@@ -6,6 +6,26 @@
       </v-card-title>
       <v-card-text sm10 offset-sm1 xs12>
         <div v-html="Taxidermy"></div>
+        <v-row>
+            <v-col>
+        <v-btn href="tel:+16057982002" color="primary" class="white--text" dark>
+          <v-icon left>mdi-phone</v-icon>
+          (605) 798-2002 Shop
+        </v-btn>
+        </v-col>
+        <v-col>
+        <v-btn href="tel:+16054413937" color="primary" class="white--text" dark>
+          <v-icon left>mdi-phone</v-icon>
+          (605) 441-3937 Mark
+        </v-btn>
+        </v-col>
+        <v-col>
+        <v-btn href="tel:+16054419997" color="primary" class="white--text" dark>
+          <v-icon left>mdi-phone</v-icon>
+          (605) 441-9997 Mick 
+        </v-btn>
+        </v-col>
+</v-row>
       </v-card-text>
     </v-card>
 
@@ -50,7 +70,7 @@ export default {
   data: function () {
     return {
       Taxidermy:
-        "<div><div>The taxidermy business has evolved from Tom learning to do a little of our own work.&nbsp; He apprenticed with a good friend, Marty Hanson of Hanson Taxidermy in Philip, SD -a true master of the profession.</div><div><br></div><div>Mark &amp; Mick have spent most of their lives (when not involved in school or sports) either hunting, fishing, guiding or working with animals in some way.</div><div><br></div><div>As a result of our family's involvement in hunting and wildlife, it was only natural for them to move towards preserving the beauty that nature has provided. Mark &amp; Mick have both taken up the profession and enjoy preserving wildlife and its surroundings.</div><div><br></div><div>They attended Northwest Iowa School of Taxidermy with Tom Matuska. They are very professional and deliver an excellent product.</div><div><br></div><div>The quality of work and pricing leaves you asking why you would go anywhere else.</div><div><br></div><div>Check out pictures of some of their work under the Gallery tab!</div><div><br></div><div>Give them a call. If interested, they can send you a brochure with more pictures of their work and a price list.</div><div><br></div><div>(605) 798-2002 shop</div><div><br></div><div>(605) 441-3937 Mark cell</div><div><br></div><div>(605) 441-9997 Mick cell</div></div>",
+        "<div style='color:black'><div>The taxidermy business has evolved from Tom learning to do a little of our own work.&nbsp; He apprenticed with a good friend, Marty Hanson of Hanson Taxidermy in Philip, SD -a true master of the profession.</div><div><br></div><div>Mark &amp; Mick have spent most of their lives (when not involved in school or sports) either hunting, fishing, guiding or working with animals in some way.</div><div><br></div><div>As a result of our family's involvement in hunting and wildlife, it was only natural for them to move towards preserving the beauty that nature has provided. Mark &amp; Mick have both taken up the profession and enjoy preserving wildlife and its surroundings.</div><div><br></div><div>They attended Northwest Iowa School of Taxidermy with Tom Matuska. They are very professional and deliver an excellent product.</div><div><br></div><div>The quality of work and pricing leaves you asking why you would go anywhere else.</div><div><br></div><div>Check out pictures of some of their work under the Gallery tab!</div><div><br></div><div>Give them a call. If interested, they can send you a brochure with more pictures of their work and a price list.</div><div><br></div>",
     };
   },
   mounted: function () {},

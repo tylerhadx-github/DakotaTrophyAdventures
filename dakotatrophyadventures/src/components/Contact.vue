@@ -8,7 +8,20 @@
           </v-card-title>
           <v-card-text>
             <v-row>
-              <v-col> </v-col>
+              <v-col>
+                    <v-btn href="tel:+16054411685" color="primary" class="white--text" dark>
+                      <v-icon left>mdi-phone</v-icon>
+                      (605) 441-1685
+                    </v-btn>
+              </v-col>
+            </v-row>
+             <v-row>
+              <v-col>
+                    <v-btn href="mailto:huntdakotaTrophy@gmail.com" color="primary" class="white--text" dark>
+                      <v-icon left>mdi-email</v-icon>
+                      Email Us
+                    </v-btn>
+              </v-col>
             </v-row>
             <v-row
               ><v-col>

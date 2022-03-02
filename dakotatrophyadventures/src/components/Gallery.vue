@@ -1,5 +1,6 @@
 <template>
   <div>
+    <br>
     <v-row>
       <v-btn href="/Gallerys">Back To Galleries</v-btn>
     </v-row>
@@ -8,7 +9,7 @@
         v-for="i in filteredImages"
         :key="i.imageid"
         class="d-flex child-flex"
-        cols="12"
+        cols="4"
         md="4"
       >
         <v-card>
