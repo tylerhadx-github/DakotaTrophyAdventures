@@ -31,7 +31,6 @@
                                  :key="item.title"
                                  :to="{name: item.path}">
                         <v-list-item-content>
-                            <v-btn @click.stop="toFB" icon v-if="item.title == 'Facebook'"><v-icon>mdi-facebook</v-icon></v-btn>
 
                             <span v-if="!item.icon">{{ item.title }}</span>
                         </v-list-item-content>
@@ -74,7 +73,6 @@ export default {
                 { title: 'Location', path: 'Map', icon: false },
                 { title: 'Reviews', path: 'Reviews', icon: false },
                 { title: 'Contact', path: 'Contact', icon: false },
-                { title: 'Facebook' ,         icon:true},
 
             ],
   }

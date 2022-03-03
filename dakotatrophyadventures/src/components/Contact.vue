@@ -1,5 +1,5 @@
 <template>
-  <div style="padding-top: 128px">
+  <div >
     <v-row
       ><v-col>
         <v-card :height="windowSize.y" v-if="!sentMessage">
@@ -23,8 +23,8 @@
                     </v-btn>
               </v-col>
             </v-row>
-            <v-row
-              ><v-col>
+            <v-row >
+                <v-col>
                 <form
                   id="fs-frm"
                   name="simple-contact-form"
