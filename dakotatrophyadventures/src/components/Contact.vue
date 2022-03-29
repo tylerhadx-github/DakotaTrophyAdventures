@@ -8,21 +8,38 @@
           </v-card-title>
           <v-card-text>
             <v-row>
-              <v-col>
+              <v-col style="color:black;font-family: Tahoma, Geneva, sans-serif;font-size:16px">
                     <v-btn href="tel:+16054411685" color="primary" class="white--text" dark>
                       <v-icon left>mdi-phone</v-icon>
-                      (605) 441-1685
+                      (605) 441-1685 
                     </v-btn>
+                    Tomilyn's Cell Best Method of Contact - you can call or text
               </v-col>
             </v-row>
              <v-row>
+              <v-col style="color:black;font-family: Tahoma, Geneva, sans-serif;font-size:16px">
+                    <v-btn href="tel:+16057982116" color="primary" class="white--text" dark>
+                      <v-icon left>mdi-phone</v-icon>
+                      605-798-2116
+                    </v-btn>
+                     House
+              </v-col>
+            </v-row>
+            <v-row>
               <v-col>
                     <v-btn href="mailto:huntdakotaTrophy@gmail.com" color="primary" class="white--text" dark>
                       <v-icon left>mdi-email</v-icon>
-                      Email Us
+                      huntdakotaTrophy@gmail.com Email Us
                     </v-btn>
               </v-col>
             </v-row>
+            <v-row>
+              <v-col style="color:black;font-family: Tahoma, Geneva, sans-serif;font-size:16px">
+                <p>21858 Mule Deer Drive.</p>
+                <p>Wasta, SD 57791</p>
+              </v-col>
+            </v-row>
+             
             <v-row >
                 <v-col>
                 <form

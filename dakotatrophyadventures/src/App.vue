@@ -90,7 +90,7 @@ export default {
       snackVisible: false,
       snackText: null,
       sidebar: false,
-      Motto: "The best kept secret of hunting in the west",
+      //Motto: "The best kept secret of hunting in the west",
       menuItems: [
         { title: "Home", path: "Home", icon: false },
         { title: "Gallery", path: "Gallerys", icon: false },
