@@ -36,7 +36,7 @@
 
     <v-row>
       <v-col>
-        <v-card>
+        <!-- <v-card>
           <v-card-title style="justify-content: center">
             <h3 class="headline mb-0">Pheasant Hunting</h3>
           </v-card-title>
@@ -46,7 +46,7 @@
               v-html="PheasantHunting"
             ></div>
           </v-card-text>
-        </v-card>
+        </v-card> -->
 
         <v-card>
           <v-card-title style="justify-content: center">
@@ -167,8 +167,8 @@ export default {
       ],
       BigGame:
         "<p>We have hunted with outfitters in Canada, Africa, New Zealand, and Australia that we highly</p> <p>recommend if you are looking for that type of a hunt. Please call if you want to talk to one of us or</p> <p>look under our Gallery tab - Personal Hunts for pictures of trophies taken!</p> <p>Full Curl Stone – Luke Vince</p> <p>Traditional Horseback Hunts in North Central British Columbia - Stone Sheep, Canadian</p> <p>Moose, Mountain Goat, Elk</p> <p>Luke Vince and his family have been in the outfitting business for generations and are skilled</p> <p>outfitters and guides.</p> <p>North Curl Outfitters– Mac Watson</p> <p>Horseback Hunts in Yukon Territory - Dall Sheep, Stone Sheep, Alaska/Yukon Moose, Grizzly</p> <p>Bear, Black Bear</p> <p>Mac Watson and Luke Vince are brothers and Mac also comes from a long line of guides and</p> <p>outfitters. Before having North Curl, Mac used to run Yukon Stone.</p> <p>JP Big Game Safaris – Juan Pace</p> <p>This is an excellent place for an African safari - whether it is for first time African hunters, or</p> <p>seasoned hunters in Africa. You can hunt plains game or the dangerous 5! Juan is a very</p> <p><br></p> <p>honest guy to work with, not to mention a great professional hunter! We have hunted with</p> <p>different outfitters in Africa and he was by far the best! Check out his website at</p> <p>www.jpsafaris.com</p> <p>Southern Mountain Adventures – Croc Adams</p> <p>This hunt is in New Zealand and specializes in tahr, but also has chamois, and stag. Many of</p> <p>the top tahr in the record book came from Croc&#39;s hunting area. Check out his website at:</p> <p>www.southernmountainadventures.com</p>",
-      PheasantHunting:
-        "<p>We do not offer pheasant hunting as we do not have a huntable population at this time. However, if you are interested, we have a few contacts that you could check out! Please give us a call!</p>",
+      // PheasantHunting:
+      //   "<p>We do not offer pheasant hunting as we do not have a huntable population at this time. However, if you are interested, we have a few contacts that you could check out! Please give us a call!</p>",
     };
   },
   methods: {

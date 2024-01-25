@@ -15,12 +15,12 @@
         "
       >
         <v-row>
-          <v-col md="4" cols="12" 
+          <v-col md="4" cols="12"
             ><v-img :src="'/img/Deer/Mule Deer/Jefferies MD WT.JPG'"></v-img
           ></v-col>
           <v-col md="8" cols="12">
             <h3
-              class="headline mb-0"
+              class="headline mb-0 text-center"
               style="
                 font-family: futura-pt;
                 font-weight: 400;
@@ -31,7 +31,7 @@
                 line-height: 1.3em;
               "
             >
-              Rifle Mule Deer and Whitetail Hunts
+              Rifle Mule Deer and Whitetail Hunts - Dakota Trophy Hunt
             </h3>
             <p
               class="pt-2"
@@ -41,19 +41,66 @@
                 font-style: normal;
                 font-size: 16px;
               "
-              v-html="Deer"
-            ></p
-          ></v-col>
+            >
+              Our rifle deer hunts are done through the corporation Dakota
+              Trophy Hunt. We have been hunting rifle deer since 1965. The rifle
+              deer season is a 16-day season in November. We run three hunts
+              during the season. All rifle deer hunts are four days in length
+              and fully guided. As a guest of Dakota Trophy Hunt, more than
+              140,000 acres of rugged country along the Belle Fourche and
+              Cheyenne Rivers are reserved exclusively for you. The hills and
+              draws of these river breaks provide abundant habitat for deer.
+              Large numbers of Mule Deer range in the breaks, while Whitetail
+              range on the bottom land. During your hunt in this &quot;deer
+              country&quot; you will not see any other hunters except those in
+              your party. But you will see trophy deer every day and you will
+              have opportunities to harvest. Your hunt will take place on
+              private property. The philosophy of Dakota Trophy Hunt is
+              conservation of game. Therefore, we encourage you to shoot only a
+              four point or better trophy buck (Western Count). We want to take
+              only those bucks who have reached maturity and sport a true trophy
+              class rack and thereby preserve a vigorous herd of deer so that
+              year after year we can offer a trophy buck. Methods of hunting
+              will vary according to which rancher/guide you hunt with and
+              terrain. We can accommodate anyone from the most vigorous mountain
+              hiker to the physically handicapped sportsman. Transportation to
+              and from camp and one hunting area to another will generally be by
+              a pickup or suburban. From there most hunts are spot and stalk.
+              Dakota Trophy Hunt will take care of all your needs during your
+              hunt. Three delicious meals will be served each day and hunters
+              always rave about the food. If you are hunting some distance from
+              the kitchen, you will take noon lunch with you. Your rancher/guide
+              will have you back in camp in time for a steak or prime rib type
+              of dinner at night. While hunting you will see numerous bucks and
+              will have no problem scoring, if your rifle is zeroed in and you
+              have practiced with it. Sight your rifle in for 100-yard or
+              200-yard shots, depending on what you are accustomed to. <br />
+              Some hunters take their meat and heads home with them, however we
+              have families in need close by if you choose to donate meat. We
+              also have an outstanding taxidermist available with reasonable
+              rates. Many of our hunters use this option when they have
+              availability. Some hunters choose to drive their own automobile to
+              our camp while others fly into Rapid City to be picked up and
+              taken back by Dakota Trophy. Since our hunting facilities are
+              limited, we book only the number of hunters that each rancher can
+              fill with trophy bucks. We book early and are years out! <br />
+            </p>
+
+            <p style="font-weight: bold" class="text-center">
+              More Trophy Class Bucks per square mile than anywhere on the
+              continent
+              <br />
+
+              High success rates <br />
+              Unprecedented hunter satisfaction since 1965
+            </p>
+          </v-col>
         </v-row>
       </v-card-text>
     </v-card>
     <v-card flat class="pa-4 ma-4">
       <v-card-title>
-        <v-flex sm6 offset-sm3 xs12>
-          <h3 class="headline mb-0" style="text-align: center">
-            Archery Deer Hunts
-          </h3>
-        </v-flex>
+        <v-flex sm6 offset-sm3 xs12> </v-flex>
       </v-card-title>
       <v-card-text
         sm10
@@ -66,8 +113,11 @@
         "
       >
         <v-row>
-          <v-col cols="12" md="8"
-            ><div
+          <v-col cols="12" md="8">
+            <h3 class="headline mb-0" style="text-align: center">
+              Archery Deer Hunts
+            </h3>
+            <div
               style="
                 font-family: europa;
                 font-weight: 300;
@@ -86,11 +136,7 @@
 
     <v-card flat class="pa-4 ma-4">
       <v-card-title>
-        <v-flex sm6 offset-sm3 xs12>
-          <h3 class="headline mb-0" style="text-align: center">
-            Merriam Turkey Hunts
-          </h3>
-        </v-flex>
+        <v-flex sm6 offset-sm3 xs12> </v-flex>
       </v-card-title>
       <v-card-text
         sm10
@@ -106,8 +152,11 @@
           <v-col md="4" cols="12"
             ><v-img :src="'/img/Turkey/Solomons and Baumans 2013.jpg'"></v-img
           ></v-col>
-          <v-col md="8" cols="12"
-            ><div style="color: black" v-html="Turkeys"></div
+          <v-col md="8" cols="12">
+            <h3 class="headline mb-0" style="text-align: center">
+              Merriam Turkey Hunts
+            </h3>
+            <div style="color: black" v-html="Turkeys"></div
           ></v-col>
         </v-row>
       </v-card-text>
@@ -115,11 +164,7 @@
 
     <v-card flat class="pa-4 ma-4">
       <v-card-title>
-        <v-flex sm6 offset-sm3 xs12>
-          <h3 class="headline mb-0" style="text-align: center">
-            Antelope Hunts
-          </h3>
-        </v-flex>
+        <v-flex sm6 offset-sm3 xs12> </v-flex>
       </v-card-title>
       <v-card-text
         sm10
@@ -132,14 +177,173 @@
         "
       >
         <v-row>
-          <v-col md="8" cols="12"
-            ><div style="color: black" v-html="Antelope"></div
+          <v-col md="8" cols="12">
+            <h3 class="headline mb-0" style="text-align: center">
+              Antelope Hunts
+            </h3>
+            <div style="color: black" v-html="Antelope"></div
           ></v-col>
           <v-col md="4" cols="12"
             ><v-img
               :src="'/img/Antelope/2018/Ron Pringle antelope 2.jpg'"
             ></v-img
           ></v-col>
+        </v-row>
+      </v-card-text>
+    </v-card>
+
+    <v-card flat class="pa-4 ma-4">
+      <v-card-title>
+        <v-flex sm6 offset-sm3 xs12> </v-flex>
+      </v-card-title>
+      <v-card-text
+        sm10
+        offset-sm1
+        xs12
+        style="
+          color: black;
+          font-family: Tahoma, Geneva, sans-serif;
+          font-size: 16px;
+        "
+      >
+        <v-row>
+          <v-col cols="12">
+            <h3 class="headline mb-0" style="text-align: center">
+              Pheasant Hunting
+            </h3>
+            <div style="color: black" class="text-center">
+              <p>
+                We are currently in the process of trying to start up a pheasant
+                hunting operation. We have some birds established and are hoping
+                to continue to work on this in the next couple of eyars!
+                <br />
+                If you are interested, please let us know and we can add you to
+                our list to send information to once we have our pheasant
+                hunting up and running!
+              </p>
+            </div>
+          </v-col>
+        </v-row>
+      </v-card-text>
+    </v-card>
+
+    <v-card flat class="pa-4 ma-4">
+      <v-card-title>
+        <v-flex sm6 offset-sm3 xs12> </v-flex>
+      </v-card-title>
+      <v-card-text
+        sm10
+        offset-sm1
+        xs12
+        style="
+          color: black;
+          font-family: Tahoma, Geneva, sans-serif;
+          font-size: 16px;
+        "
+      >
+        <v-row>
+          <v-col cols="12">
+            <h3 class="headline mb-0" style="text-align: center">
+              Predator Control Hunts
+            </h3>
+            <div style="color: black" class="text-center">
+              <p>
+                Enjoy the thrill of hunting coyotes and other small game animals
+                with experienced predator hunters. We offer coyote calling in
+                the daylight or at night using thermal equipment. All predator
+                control hunts take place on private land and are generally run
+                in late fall or winter. We can run calling/trapping hunts from
+                early from Oct 20-31. After deer season, we will do
+                calling/trapping or baited hunts from Dec 15-Mar 15. Most
+                hunters will have the opportunity to harvest coyotes, racoons,
+                porcupine, badger, and/or fox during their hunt. We prefer to
+                take groups of up to 6 to make sure that we have enough thermal
+                equipment for everyone to have ample opportunity to shoot. If
+                you have proper equipment for thermal hunting, you are welcome
+                to bring your own, otherwise we will provide rifles and thermal
+                equipment for these hunts. You will be guided in groups of 2. We
+                can take a single person if you are a lone hunter. Most thermal
+                hunts will be 3 days/nights but can be customized for whatever
+                suits your schedule and interest. We recommend a minimum of 3
+                days/nights to help avoid undesirable weather, wind, or moon
+              </p>
+            </div>
+          </v-col>
+        </v-row>
+      </v-card-text>
+    </v-card>
+
+    <v-card flat class="pa-4 ma-4">
+      <v-card-title>
+        <v-flex sm6 offset-sm3 xs12> </v-flex>
+      </v-card-title>
+      <v-card-text
+        sm10
+        offset-sm1
+        xs12
+        style="
+          color: black;
+          font-family: Tahoma, Geneva, sans-serif;
+          font-size: 16px;
+        "
+      >
+        <v-row>
+          <v-col cols="12">
+            <h3 class="headline mb-0" style="text-align: center">
+              Fossil Hunts
+            </h3>
+            <div style="color: black" class="text-center">
+              <p>
+                Have you ever wondered what was on the Earth before we were? We
+                offer custom family friendly adventures for the outdoor
+                enthusiasts that also love rocks, fossils, minerals, and
+                crystals. Come discover what was in the ocean about 73.5 million
+                years ago. On Elk Creek in South Dakota, we find many colorful
+                ammonite species including scaphites, baculites, Placenticeras,
+                nautilus, and the giant clam. We also find large septarian
+                concretions filled with minerals like calcite or golden barite,
+                and often with a cephalopod preserved in the center. The species
+                are often preserved with their very colorful and iridescent
+                shell still unaltered and intact. The rainbow colors of their
+                shell make them one of the most desirable fossils for
+                collectors. These adventures can be customizable to suit each
+                person or family. Generally, we run these from
+                mid-July-September but can usually add on a little fossil
+                hunting to another adventure.
+              </p>
+            </div>
+          </v-col>
+        </v-row>
+      </v-card-text>
+    </v-card>
+
+    <v-card flat class="pa-4 ma-4">
+      <v-card-title>
+        <v-flex sm6 offset-sm3 xs12> </v-flex>
+      </v-card-title>
+      <v-card-text
+        sm10
+        offset-sm1
+        xs12
+        style="
+          color: black;
+          font-family: Tahoma, Geneva, sans-serif;
+          font-size: 16px;
+        "
+      >
+        <v-row>
+          <v-col cols="12">
+            <h3 class="headline mb-0" style="text-align: center">
+              Fishing/Shed Hunting
+            </h3>
+            <div style="color: black" class="text-center">
+              <p>
+                We can offer day fishing excursions in private stock dams, the Cheyenne River, and Elk Creek. Species of fish include (at times, depending on weather, drought and quantity) catfish, northern pike, bass, walleye, perch, and blue gill. This is mainly offered as an add-on to another adventure!
+                  <br/>
+            You can also come pick up naturally shed antlers off trophy mule deer and whitetail. Shed hunting is on farm fields and in the creek and river breaks. As with fishing, shed hunting is generally offered as an add on to another adventure or an activity to fill time during the day!
+              </p>
+            </div>
+          </v-col>
         </v-row>
       </v-card-text>
     </v-card>
@@ -219,8 +423,11 @@
     <v-card flat class="pa-4 ma-4">
       <v-card-title>
         <v-flex sm6 offset-sm3 xs12>
-          <h3 class="headline mb-0" style="text-align: center; white-space: nowrap;">
-           FAQ
+          <h3
+            class="headline mb-0"
+            style="text-align: center; white-space: nowrap"
+          >
+            FAQ
           </h3>
         </v-flex>
       </v-card-title>
@@ -259,7 +466,7 @@ export default {
         "Our accommodations are not what you would see in a 5-star resort, but it is also not a tent camp in the wilderness. We have small bunkhouse style cabins (some with electric heat, some with a wood stove). The beds do have bedding, but we recommend that you bring a sleeping bag for extra warmth if you have room. Besides the bunkhouse style cabins, the upstairs of Tomilyn’s house is used for lodging. There is a detached shower house with two complete bathrooms - there are towels provided. For husband/wife couples, we usually have them stay in a spare bedroom in the main house or in a camper for privacy. We serve meals in a garage attached to our house that is just a short distance from where you will be staying. We also have a pool table that you are more than welcome to use while socializing. We do our best to meet everyone&#39;s needs for accommodations, but if you have a special need, please let us know early so we can prepare!",
       Hunts:
         '<div><font color="#000000" face="Tahoma, Geneva, sans-serif" size="3">Our rifle deer hunts are done through the corporation Dakota Trophy Hunt. We have been hunting rifle deer since 1965. Tom is in charge of the booking for Dakota Trophy Hunt and has been since 1987. As of recently, he has been assisted by Tomilyn with the booking and paperwork.&nbsp; We do archery deer, turkey, and antelope separately.</font></div><div><font color="#000000" face="Tahoma, Geneva, sans-serif" size="3"><br></font></div><div><font color="#000000" face="Tahoma, Geneva, sans-serif" size="3">We do not do a lot of antelope hunting, but we do take antelope hunters occastionally. Please call or email for details!</font></div><div><font color="#000000" face="Tahoma, Geneva, sans-serif" size="3"><br></font></div><div><font color="#000000" face="Tahoma, Geneva, sans-serif" size="3">Call the references, book the hunt -you\'ll be glad you did!</font></div>',
-      Deer: "Our rifle deer hunts are done through the corporation Dakota Trophy Hunt. We have been hunting rifle deer since 1965. The rifle deer season is a 16 day season in November. We run three hunts during season. All rifle deer hunts are four days in length and fully guided. As a guest of Dakota Trophy Hunt, more than 140,000 acres of rugged country along the Belle Fourche and Cheyenne Rivers are reserved exclusively for you. The hills and draws of these river breaks provide abundant habitat for deer. Large numbers of Mule Deer range in the breaks, while Whitetail range on the bottom land. During your hunt in this &quot;deer country&quot; you will not see any other hunters except those in your party. But you will see trophy deer every day and you will have opportunities to harvest. Your hunt will take place on private property. The philosophy of Dakota Trophy Hunt is conservation of game. Therefore, we encourage you to shoot only a four point or better trophy buck (Western Count). We want to take only those bucks who have reached maturity and sport a true trophy class rack and thereby preserve a vigorous herd of deer so that year after year we can offer a trophy buck. Methods of hunting will vary according to which rancher/guide you hunt with and terrain. We can accommodate anyone from the most vigorous mountain hiker to the physically handicapped sportsman. Transportation to and from camp and one hunting area to another will generally be by a pickup or suburban. From there most hunts are spot and stalk. Dakota Trophy Hunt will take care of all your needs during your hunt. Three delicious meals will be served each day and hunters always rave about the food. If you are hunting some distance from the kitchen, you will take noon lunch with you. Your rancher/guide will have you back in camp in time for a steak or prime rib type of dinner at night. While hunting you will see numerous bucks and will have no problem scoring, if your rifle is zeroed in and you have practiced with it. Sight your rifle in for 100 or 200 yard shots, depending on what you are accustomed to. <br> Some hunters take their meat and heads home with them, however we have families in need close by if you choose to donate meat. We also have an outstanding taxidermist available with reasonable rates. Many of our hunters use this option. Some hunters choose to drive their own automobile to our camp while others fly into Rapid City to be picked up and taken back by Dakota Trophy. Since our hunting facilities are limited, we book only the number of hunters that each rancher can fill with trophy bucks. We book early and are years out! <br> More Trophy Class Bucks per square mile than anywhere on the continent <br> High success rates <br> Unprecedented hunter satisfaction since 1965",
+      Deer: "",
       FAQ: "How do I book a hunt? To book a hunt we require a deposit upon booking. You are not booked until a deposit is on file! Final payment is due upon arrival or 30 days prior to arrival. Deposits are nonrefundable. If you do not draw the license (and have proof of application and preference point purchases) we will refund your deposit or roll you forward to the next available year. <br> What kind of success can I expect? Unless you are looking for a B&amp;C trophy you can be assured of several chances at nice trophy animals. The rest is up to you. We generally have a 98-100% success rate on rifle deer, around 50% success on archery deer, 150-200% success on turkeys, and have never had an antelope hunter go home eating tag soup. What&#39;s the best firearm to bring? Big deer (and antelope) can be tough, we recommend a .270 or larger rifle, but more important is accuracy. Practice with your gun and know exactly where it is shooting. Practice, practice, practice. Obviously, on turkey hunts, most hunters already have a favorite shotgun, and on archery hunts, we hope you plan on bringing a bow. How do I get a license? We will send information on how to apply and deadlines. You will need to acquire preference points for multiple years before the year you plan to hunt. We help you through this process. Please pay attention to the information we send you as if you don’t get the proper points it can deter a hunt you’ve had booked for years. We do not have transferable landowner tags, so if you do not draw the proper tag through the SDGF&amp;P, you are out of luck. What is your guarantee? We guarantee 100% effort in assisting you to a trophy animal you will be proud of. We can&#39;t control weather, marksmanship, or luck.",
       Misc: "<p><strong>Hunts include:</strong> Lodging – We have a base camp with bunkhouse-style accommodations. It is not a fancy 5-star lodge, but suitable for a hunting camp! *See more below! Meals and beverages – Three meals and basic beverages are provided. Transportation to and from Rapid City Regional Airport – please just be in contact with us if you plan to fly so we can accommodate flight times. Full or Semi-guided hunting - depending on the hunt booked. All of our rifle deer hunts are fully guided – no exceptions! Alcoholic beverages within reason - if you require or want something very specific, you may want to bring that yourself!</p> <p><strong>Hunts do NOT include:</strong> Licenses – We have a lottery draw system. We will assist you through the application process, but the cost of the license is up to you! *See more below! Taxes required by the state of South Dakota – The current state sales tax rate is 6%. Taxidermy services – We have a taxidermist available if needed, or you are welcome to take your trophy home to your own taxidermist. Meat processing – We have the option of someone who can process meat, or facilities for you to do it yourself if wanted. Shipping of trophies or meat – Most guys prefer to take home with them, if you want to ship, we will help if possible. Gratuity for Guides & Staff Firearms and ammunition – These can be available at reasonable cost with advance notice.</p>",
       Licensing:
