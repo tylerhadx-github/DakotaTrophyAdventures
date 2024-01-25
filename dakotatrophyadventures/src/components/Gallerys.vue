@@ -1,6 +1,6 @@
 <template>
     <v-card>
-      <v-card-title>
+      <v-card-title style="justify-content: center;">
         <h3 class="headline mb-0">Galleries</h3>
       </v-card-title>
       <v-card-text xs12>

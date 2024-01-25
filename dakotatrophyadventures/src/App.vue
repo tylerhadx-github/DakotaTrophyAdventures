@@ -112,7 +112,7 @@ export default {
         "https://www.facebook.com/Dakota-Trophy-Adventures-Dakota-Trophy-Taxidermy-314633108549681";
     },
     toYT() {
-      // window.location.href = 'https://www.youtube.com/channel/UC3FxCPot73PoJR85jPN2n3w';
+       window.location.href = 'https://www.youtube.com/channel/UCxpH3AAQUSIrdyisgcIXVlw';
     },
     toIG() {
       // window.location.href = 'https://www.instagram.com/safari_outfitters_russia/';

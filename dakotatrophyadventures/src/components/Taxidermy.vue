@@ -1,8 +1,8 @@
 <template>
   <div>
     <v-card>
-      <v-card-title>
-        <v-flex sm6 offset-sm3 xs12> </v-flex>
+      <v-card-title style="justify-content: center;">
+        <h3 class="headline mb-0">Taxidermy</h3>
       </v-card-title>
       <v-card-text sm10 offset-sm1 xs12>
         <div v-html="Taxidermy"></div>

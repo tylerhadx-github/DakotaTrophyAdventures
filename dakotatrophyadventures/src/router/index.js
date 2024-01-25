@@ -13,6 +13,7 @@ const Map = () => import(/* webpackChunkName: "map" */ '@/components/Map.vue')
 const Hunting = () => import(/* webpackChunkName: "hunting" */ '@/components/Hunting.vue')
 const Taxidermy = () => import(/* webpackChunkName: "taxidermy" */ '@/components/Taxidermy.vue')
 const Archery = () => import(/* webpackChunkName: "archery" */ '@/components/Archery.vue')
+const Ranch = () => import(/* webpackChunkName: "ranch" */ '@/components/Ranch.vue')
 
 
 export default new Router({
@@ -84,6 +85,11 @@ export default new Router({
        name: 'Taxidermy',
        component: Taxidermy,
    },
+   {
+    path: '/Ranch',
+    name: 'Ranch',
+    component: Ranch,
+},
 ]
 })
 

@@ -1,14 +1,5 @@
 <template>
   <div>
-    <!-- <v-card flat>
-        <v-card-title>
-            <v-flex sm6 offset-sm3 xs12>
-            </v-flex>
-        </v-card-title>
-        <v-card-text sm10 offset-sm1 xs12 style="color:black;font-family: Tahoma, Geneva, sans-serif;font-size:16px">
-            <div v-html="Hunts"></div>
-        </v-card-text>
-    </v-card> -->
     <v-card flat class="pa-4 ma-4">
       <v-card-title>
         <v-flex sm6 offset-sm3 xs12> </v-flex>
