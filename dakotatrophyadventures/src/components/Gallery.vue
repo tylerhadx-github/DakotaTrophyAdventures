@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="pa-4 ma-4">
     <br>
     <v-row>
       <v-btn href="/Gallerys">Back To Galleries</v-btn>
@@ -8,11 +8,12 @@
       <v-col
         v-for="i in filteredImages"
         :key="i.imageid"
-        class="d-flex child-flex"
-        cols="4"
-        md="4"
+        cols="12"
+        md="2"
+        sm="6"
+        xs="12"
       >
-        <v-card>
+        <v-card class="pa-4" flat>
           <v-img
             :src="i.url"
             aspect-ratio="1"

@@ -33,8 +33,11 @@
       <v-col
         v-for="i in filteredImages"
         :key="i.imageid"
-        class="d-flex child-flex"
-        cols="4"
+        class="d-flex child-flex pa-4"
+        cols="2"
+        md="2"
+        sm="12"
+        xs="12"
       >
         <v-img
           :src="i.url"

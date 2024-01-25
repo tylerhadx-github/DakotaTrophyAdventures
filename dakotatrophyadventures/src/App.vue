@@ -98,6 +98,7 @@ export default {
         { title: "Taxidermy", path: "Taxidermy", icon: false },
         { title: "Location", path: "Map", icon: false },
         { title: "Reviews", path: "Reviews", icon: false },
+        { title: "Trask Ranch", path: "Ranch", icon: false },
         { title: "Contact", path: "Contact", icon: false },
       ],
     };
