@@ -14,10 +14,12 @@
             class="offset-md-3"
           >
             <v-card flat>
+              <v-carousel v-if="review.images && review.images.length >0">
+                <v-carousel-item v-for="(img, i) in review.images" :key="i">
+                  <v-img :src="getImage(img)"               height="600"></v-img>
+                </v-carousel-item>
+              </v-carousel>
               <v-card-text>
-                <div v-for="(img, i) in review.images" :key="i">
-                  <v-img :src="getImage(img)"></v-img>
-                </div>
                 <div style="color: black" v-html="review.content"></div>
               </v-card-text>
               <v-card-actions>
