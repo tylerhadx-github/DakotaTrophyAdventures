@@ -9,14 +9,15 @@
         tributaries, the ranch serves as the foundation for Dakota Trophy
         Adventures—a versatile business dedicated to hunting and outdoor
         recreation. From trophy Mule Deer and Whitetail to Antelope and Merriam
-        turkeys, Dakota Trophy Adventures offers diverse hunting experiences. In
-        addition to hunting, the ranch includes cattle, registered quarter
-        horses, and personal hunting trips spanning from Alaska to Africa,
-        various provinces in Canada, numerous western United States, and as far
-        south as New Zealand and Australia. Dakota Trophy Adventures excels in
-        helping clients discover exceptional hunting areas and enjoy the great
-        outdoors. We take pride in providing excellent recommendations for
-        outfitters we have hunted with worldwide.
+        turkeys, as well as fossils, fihsing and predator control thermal hunts!
+        Dakota Trophy Adventures offers diverse hunting experiences. In addition
+        to hunting, the ranch includes cattle, registered quarter horses, and
+        personal hunting trips spanning from Alaska to Africa, various provinces
+        in Canada, numerous western United States, and as far south as New
+        Zealand and Australia. Dakota Trophy Adventures excels in helping
+        clients discover exceptional hunting areas and enjoy the great outdoors.
+        We take pride in providing excellent recommendations for outfitters we
+        have hunted with worldwide.
       </p>
       <p>
         The Trask Family resides on a prairie ranch in South Dakota, a property
@@ -25,19 +26,19 @@
         connection to the land that goes back generations. His father played a
         pivotal role in establishing a commercial hunting operation in 1965,
         complementing their ranching activities in the Elm Springs region. Tom's
-        grandfather, Mack Trask, originally homesteaded at the forks of the
-        Cheyenne and Belle Fourche rivers, just north of our current location.
-        Growing up in a family deeply involved in ranching and hunting, Tom
-        spent winters trapping with his father and summers hunting fossils with
-        his mother. He attended the local country school in Meade County, where
-        his enthusiasm for sharing hunting adventures became well-known. Even
-        during high school in Sturgis, Tom's passion for the ranching and
-        hunting lifestyle persisted. Following his high school graduation, Tom
-        briefly attended college at SDSU. However, his return home during
-        Christmas revealed the challenges his family and cattle faced in a tough
-        winter, prompting him to dedicate his efforts to their needs. This
-        commitment underscored Tom's deep connection to both the land and the
-        responsibilities that came with it.
+        grandfather, Mack Trask, homesteaded at the forks of the Cheyenne and
+        Belle Fourche rivers, just north of our current location. Growing up in
+        a family deeply involved in ranching and hunting, Tom spent winters
+        trapping with his father and summers hunting fossils with his mother. He
+        attended the local country school in Meade County, where his enthusiasm
+        for sharing hunting adventures became well-known. Even during high
+        school in Sturgis, Tom's passion for the ranching and hunting lifestyle
+        persisted. Following his high school graduation, Tom briefly attended
+        college at SDSU. However, his return home during Christmas revealed the
+        challenges his family and cattle faced in a tough winter, prompting him
+        to dedicate his efforts to their needs. This commitment underscored
+        Tom's deep connection to both the land and the responsibilities that
+        came with it.
       </p>
       <p>
         After partnering with his brother for a few years, Tom decided to
@@ -73,15 +74,16 @@
         Mick embarked on brief college careers and attended taxidermy school.
         Presently, both are back home, actively involved in ranching, hunting,
         and practicing taxidermy. Tomilyn pursued higher education, earning a
-        degree in Mathematics Education. She currently resides at home,
-        contributing to ranch activities and handling booking and paperwork for
-        Dakota Trophy. During your time at Dakota Trophy, you'll find all three
-        siblings guiding, cooking, managing skinning and caping, and
-        participating in meat processing. The Trask family has been blessed with
-        two grandchildren, Levi and Annie, both attending the same rural school
-        that Tom, Mark, Mick, and Tomilyn did. Levi, born in 2010, and Annie,
-        born in 2014, reside on the ranch, actively assisting whenever they can,
-        balancing their time between school and other activities.
+        degree in Mathematics Education, but has found that teaching is not her
+        calling! She currently resides at home, contributing to ranch activities
+        and handling booking and paperwork for Dakota Trophy. During your time
+        at Dakota Trophy, you'll find all three siblings guiding, cooking,
+        managing skinning and caping, and participating in meat processing. The
+        Trask family has been blessed with two grandchildren, Levi and Annie,
+        both attending the same rural school that Tom, Mark, Mick, and Tomilyn
+        did. Levi, born in 2010, and Annie, born in 2014, reside on the ranch,
+        actively assisting whenever they can, balancing their time between
+        school and other activities.
       </p>
       <p>
         We share a passion for hunting and make the most of every opportunity
@@ -107,7 +109,8 @@
         about Dakota Trophy Taxidermy, please explore the Taxidermy tab!
       </p>
       <p>
-        For discussions about hunting, cattle, or horses, please feel free to contact us. We'd love to have a conversation with you!
+        For discussions about hunting, cattle, or horses, please feel free to
+        contact us. We'd love to have a conversation with you!
       </p>
     </v-card-text>
     <v-card-actions> </v-card-actions>

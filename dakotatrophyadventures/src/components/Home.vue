@@ -17,26 +17,71 @@
             </div>
             <br />
 
-            <p class="text-center" >
-              Welcome to Dakota Trophy! Dakota Trophy is a multi-entity operation primarily focused on mule deer, whitetail, antelope, and turkey hunting in Western South Dakota. For specific information on the hunts we offer, please look at the Hunting tab. For information on the origins of Dakota Trophy and our family – the ones who handle the booking and run the camp – please continue reading below!
+            <p class="text-center">
+              Welcome to Dakota Trophy! Dakota Trophy is a multi-entity
+              operation primarily focused on mule deer, whitetail, antelope, and
+              turkey hunting in Western South Dakota. We also offer summertime
+              fossil hunting trips for the whole family, and fall/winter coyote
+              calling or thermal hunts as well as fishing and shed hutning. For
+              specific information on the hunts we offer, please look at the
+              Hunting tab. For information on the origins of Dakota Trophy and
+              our family – the ones who handle the booking and run the camp –
+              please continue reading below!
             </p>
-            <br>
+            <br />
             <v-row>
               <v-col md="4" cols="12">
-                <v-img :src="'/img/Deer/Mule%20Deer/Drefke%20MD%201.JPG'"></v-img>
+                <v-img
+                  :src="'/img/Deer/Mule%20Deer/Drefke%20MD%201.JPG'"
+                ></v-img>
               </v-col>
-              <v-col md="8" cols="12" style="display: flex;">
-                <p class="text-center pa-4 ma-4" style="place-content: center;display: flex;align-items: center;">
-                  Dakota Trophy Hunt is a corporation comprising our ranch and about 12 others, specializing in rifle Mule Deer and Whitetail hunting. Originally established as Dakota Safari in 1965, Dakota Trophy underwent a transformation in the 1980s when the group of ranchers decided to split into two organizations. We retained the camp and changed our name to Dakota Trophy, while the other organization kept the name and is based across the Cheyenne River from us. We have been managing the booking for Dakota Trophy Hunt since 1987, and the base camp is located at our ranch headquarters. This highly successful group of ranchers has harvested many Trophy Mule Deer and Whitetail over the years, covering approximately 140,000 acres of private land.
-            </p></v-col>
+              <v-col md="8" cols="12" style="display: flex">
+                <p
+                  class="text-center pa-4 ma-4"
+                  style="
+                    place-content: center;
+                    display: flex;
+                    align-items: center;
+                  "
+                >
+                  Dakota Trophy Hunt is a corporation comprising our ranch and
+                  about 12 others, specializing in rifle Mule Deer and Whitetail
+                  hunting. Originally established as Dakota Safari in 1965,
+                  Dakota Trophy underwent a transformation in the 1980s when the
+                  group of ranchers decided to split into two organizations. We
+                  retained the camp and changed our name to Dakota Trophy, while
+                  the other organization kept the name and is based across the
+                  Cheyenne River from us. We have been managing the booking for
+                  Dakota Trophy Hunt since 1987, and the base camp is located at
+                  our ranch headquarters. This highly successful group of
+                  ranchers has harvested many Trophy Mule Deer and Whitetail
+                  over the years, covering approximately 140,000 acres of
+                  private land.
+                </p></v-col
+              >
             </v-row>
             <v-row>
-              <v-col md="8" cols="12" style="display: flex;">
-              <p class="text-center pa-4 ma-4" style="place-content: center;display: flex;align-items: center;">
-                Dakota Trophy Adventures operates a guiding service for Merriam turkeys in the spring, along with antelope hunts and archery deer hunts. While based out of the same camp, it is primarily a family business.
-            </p></v-col>
-            <v-col md="4" cols="12">
-                <v-img :src="'/img/Deer/Mule%20Deer/Newmans%20MD%20WT%202.JPG'"></v-img>
+              <v-col md="8" cols="12" style="display: flex">
+                <p
+                  class="text-center pa-4 ma-4"
+                  style="
+                    place-content: center;
+                    display: flex;
+                    align-items: center;
+                  "
+                >
+                  Dakota Trophy Adventures operates a guiding service for
+                  Merriam turkeys in the spring, along with antelope hunts and
+                  archery deer hunts. While based out of the same camp, it is
+                  primarily a family business. The fossil hunting, family
+                  fishing trips, and predator control thermal hunts are also
+                  run by our family and based out of the ranch headquarters.
+                </p></v-col
+              >
+              <v-col md="4" cols="12">
+                <v-img
+                  :src="'/img/Deer/Mule%20Deer/Newmans%20MD%20WT%202.JPG'"
+                ></v-img>
               </v-col>
             </v-row>
           </v-card-text>

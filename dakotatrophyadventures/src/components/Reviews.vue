@@ -14,9 +14,9 @@
             class="offset-md-3"
           >
             <v-card flat>
-              <v-carousel v-if="review.images && review.images.length >0">
+              <v-carousel v-if="review.images && review.images.length > 0">
                 <v-carousel-item v-for="(img, i) in review.images" :key="i">
-                  <v-img :src="getImage(img)"               height="600"></v-img>
+                  <v-img :src="getImage(img)" height="600"></v-img>
                 </v-carousel-item>
               </v-carousel>
               <v-card-text>
@@ -36,27 +36,72 @@
 
     <v-row>
       <v-col>
-        <!-- <v-card>
-          <v-card-title style="justify-content: center">
-            <h3 class="headline mb-0">Pheasant Hunting</h3>
-          </v-card-title>
-          <v-card-text style="justify-content: center">
-            <div
-              style="color: black; align-content: center; text-align: center"
-              v-html="PheasantHunting"
-            ></div>
-          </v-card-text>
-        </v-card> -->
-
         <v-card>
           <v-card-title style="justify-content: center">
             <h3 class="headline mb-0">Big Game Hunting</h3>
           </v-card-title>
           <v-card-text>
-            <div
-              style="color: black; align-content: center; text-align: center"
-              v-html="BigGame"
-            ></div>
+            <div style="color: black; align-content: center; text-align: left">
+              <p>
+                We have hunted with outfitters in Canada, Africa, New Zealand,
+                and Australia that we highly recommend if you are looking for
+                that type of a hunt. Please call if you want to talk to one of
+                us or look under our Gallery tab - Personal Hunts for pictures
+                of trophies taken!
+              </p>
+
+              <p>Full Curl Stone – Luke Vince</p>
+              <ul>
+                <li>
+                  Traditional Horseback Hunts in North Central British Columbia
+                  - Stone Sheep, Canadian Moose, Mountain Goat, Elk
+                </li>
+                <li>
+                  Luke Vince and his family have been in the outfitting business
+                  for generations and are skilled outfitters and guides.
+                </li>
+                <li>Luke's website is: <a hred="https://fullcurlstoneoutfitters.com">https://fullcurlstoneoutfitters.com</a></li>
+              </ul>
+              <br>
+              <p>North Curl Outfitters– Mac Watson</p>
+              <ul>
+                <li>
+                  Horseback Hunts in Yukon Territory - Dall Sheep, Stone Sheep,
+                  Alaska/Yukon Moose, Grizzly Bear, Black Bear
+                </li>
+                <li>
+                  Mac Watson and Luke Vince are brothers and Mac also comes from
+                  a long line of guides and outfitters. Before having North
+                  Curl, Mac used to run Yukon Stone.
+                </li>
+                <li>
+                  <a href="htps://northcurl.com">https://northcurl.com</a>
+                </li>
+              </ul>
+              <br>
+              <p>JP Big Game Safaris – Juan Pace</p>
+              <ul>
+                <li>
+                  This is an excellent place for an African safari - whether it
+                  is for first time African hunters, or seasoned hunters in
+                  Africa. You can hunt plains game or the dangerous 5! Juan is a
+                  very honest guy to work with, not to mention a great
+                  professional hunter! We have hunted with different outfitters
+                  in Africa and he was by far the best! Check out his website
+                </li>
+                <li><a href="https://www.jpsafaris.com">www.jpsafaris.com</a></li>
+              </ul>
+<br>
+              <p>Southern Mountain Adventures – Croc Adams</p>
+              <ul>
+                <li>This hunt is in New Zealand and specializes in tahr, but also
+                has chamois, and stag. Many of
+                the top tahr in the record book came from Croc&#39;s hunting
+                area. Check out his website</li>
+                <li>
+                  <a href="https://www.southernmountainadventures.com">www.southernmountainadventures.com</a></li>
+              </ul>
+            </div>
           </v-card-text>
         </v-card>
       </v-col>
@@ -69,7 +114,6 @@ import { AllImages } from "../assets/AllImages";
 
 export default {
   name: "Reviews",
-
   data: function () {
     return {
       testimonials: [
@@ -165,10 +209,7 @@ export default {
           author: "Tony Mueller",
         },
       ],
-      BigGame:
-        "<p>We have hunted with outfitters in Canada, Africa, New Zealand, and Australia that we highly</p> <p>recommend if you are looking for that type of a hunt. Please call if you want to talk to one of us or</p> <p>look under our Gallery tab - Personal Hunts for pictures of trophies taken!</p> <p>Full Curl Stone – Luke Vince</p> <p>Traditional Horseback Hunts in North Central British Columbia - Stone Sheep, Canadian</p> <p>Moose, Mountain Goat, Elk</p> <p>Luke Vince and his family have been in the outfitting business for generations and are skilled</p> <p>outfitters and guides.</p> <p>North Curl Outfitters– Mac Watson</p> <p>Horseback Hunts in Yukon Territory - Dall Sheep, Stone Sheep, Alaska/Yukon Moose, Grizzly</p> <p>Bear, Black Bear</p> <p>Mac Watson and Luke Vince are brothers and Mac also comes from a long line of guides and</p> <p>outfitters. Before having North Curl, Mac used to run Yukon Stone.</p> <p>JP Big Game Safaris – Juan Pace</p> <p>This is an excellent place for an African safari - whether it is for first time African hunters, or</p> <p>seasoned hunters in Africa. You can hunt plains game or the dangerous 5! Juan is a very</p> <p><br></p> <p>honest guy to work with, not to mention a great professional hunter! We have hunted with</p> <p>different outfitters in Africa and he was by far the best! Check out his website at</p> <p>www.jpsafaris.com</p> <p>Southern Mountain Adventures – Croc Adams</p> <p>This hunt is in New Zealand and specializes in tahr, but also has chamois, and stag. Many of</p> <p>the top tahr in the record book came from Croc&#39;s hunting area. Check out his website at:</p> <p>www.southernmountainadventures.com</p>",
-      // PheasantHunting:
-      //   "<p>We do not offer pheasant hunting as we do not have a huntable population at this time. However, if you are interested, we have a few contacts that you could check out! Please give us a call!</p>",
+      //BigGame: "<p>We have hunted with outfitters in Canada, Africa, New Zealand, and Australia that we highly</p> <p>recommend if you are looking for that type of a hunt. Please call if you want to talk to one of us or</p> <p>look under our Gallery tab - Personal Hunts for pictures of trophies taken!</p> <p>Full Curl Stone – Luke Vince</p> <p>Traditional Horseback Hunts in North Central British Columbia - Stone Sheep, Canadian</p> <p>Moose, Mountain Goat, Elk</p> <p>Luke Vince and his family have been in the outfitting business for generations and are skilled</p> <p>outfitters and guides.</p> <p>North Curl Outfitters– Mac Watson</p> <p>Horseback Hunts in Yukon Territory - Dall Sheep, Stone Sheep, Alaska/Yukon Moose, Grizzly</p> <p>Bear, Black Bear</p> <p>Mac Watson and Luke Vince are brothers and Mac also comes from a long line of guides and</p> <p>outfitters. Before having North Curl, Mac used to run Yukon Stone.</p> <p>JP Big Game Safaris – Juan Pace</p> <p>This is an excellent place for an African safari - whether it is for first time African hunters, or</p> <p>seasoned hunters in Africa. You can hunt plains game or the dangerous 5! Juan is a very</p> <p><br></p> <p>honest guy to work with, not to mention a great professional hunter! We have hunted with</p> <p>different outfitters in Africa and he was by far the best! Check out his website at</p> <p>www.jpsafaris.com</p> <p>Southern Mountain Adventures – Croc Adams</p> <p>This hunt is in New Zealand and specializes in tahr, but also has chamois, and stag. Many of</p> <p>the top tahr in the record book came from Croc&#39;s hunting area. Check out his website at:</p> <p>www.southernmountainadventures.com</p>",
     };
   },
   methods: {
