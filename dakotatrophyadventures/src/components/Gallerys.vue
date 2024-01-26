@@ -60,7 +60,7 @@ export default {
         {
           galleryId: 1,
           name: "Mule Deer",
-          url: "/img/ArcheryDeer.JPG",
+          url: "/img/ArcheryDeer.jpg",
         },
         {
           galleryId: 2,
