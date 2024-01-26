@@ -60,12 +60,12 @@ export default {
         {
           galleryId: 1,
           name: "Mule Deer",
-          url: "/img/Deer/Mule Deer/Doug Reigner MD.JPG",
+          url: "/img/ArcheryDeer.JPG",
         },
         {
           galleryId: 2,
           name: "White-tailed Deer",
-          url: "/img/Deer/Whitetail/Jeremy Lewis WT.png",
+          url: "/img/Deer/Whitetail/2023/Bridger Isrealson.jpg",
         },
         { galleryId: 3, name: "Antelope", url: "/img/Antelope/p_0016.jpg" },
         { galleryId: 4, name: "Turkey", url: "/img/Turkey/turkeys.jpg" },

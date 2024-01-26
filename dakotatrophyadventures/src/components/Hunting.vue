@@ -41,7 +41,7 @@ export default {
         {
           Name: "Rifle Deer",
           Route: "/Hunting/RifleDeer",
-          img: "/img/Rifledeer.JPG",
+          img: "/img/rifledeer.jpg",
         },
         {
           Name: "Archery Deer",
@@ -60,7 +60,7 @@ export default {
         },
         { Name: "Pheasant", Route: "/Hunting/Pheasant", img: "https://images.pexels.com/photos/17980103/pexels-photo-17980103/free-photo-of-pheasant-on-a-hayfield.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
         { Name: "Predator", Route: "/Hunting/Predator", img: "https://images.pexels.com/photos/1603783/pexels-photo-1603783.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
-        { Name: "Fossil", Route: "/Hunting/FossilHunting", img: "img/Fossil.jpg" },
+        { Name: "Fossil", Route: "/Hunting/FossilHunting", img: "/img/Fossil.jpg" },
         { Name: "Fishing/Shed", Route: "/Hunting/ShedHunting", img: "/img/Justin Fishing.png" },
       ],
     };
