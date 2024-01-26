@@ -1,594 +1,68 @@
 <template>
-  <div>
-    <v-card flat class="pa-4 ma-4">
-      <v-card-title>
-        <v-flex sm6 offset-sm3 xs12> </v-flex>
-      </v-card-title>
-      <v-card-text
-        sm10
-        offset-sm1
-        xs12
-        style="
-          color: black;
-          font-family: Tahoma, Geneva, sans-serif;
-          font-size: 16px;
-        "
-      >
-        <v-row>
-          <v-col md="4" cols="12"
-            ><v-img :src="'/img/Deer/Mule Deer/Jefferies MD WT.JPG'"></v-img
-          ></v-col>
-          <v-col md="8" cols="12">
-            <h3
-              class="headline mb-0 text-center"
-              style="
-                font-family: futura-pt;
-                font-weight: 400;
-                font-style: normal;
-                font-size: 27px;
-                letter-spacing: 4px;
-                text-transform: uppercase;
-                line-height: 1.3em;
-              "
-            >
-              Rifle Mule Deer and Whitetail Hunts - Dakota Trophy Hunt
-            </h3>
-            <p
-              class="pt-2"
-              style="
-                font-family: europa;
-                font-weight: 300;
-                font-style: normal;
-                font-size: 16px;
-              "
-            >
-              Our rifle deer hunts are done through the corporation Dakota
-              Trophy Hunt. We have been hunting rifle deer since 1965. The rifle
-              deer season is a 16-day season in November. We run three hunts
-              during the season. All rifle deer hunts are four days in length
-              and fully guided. As a guest of Dakota Trophy Hunt, more than
-              140,000 acres of rugged country along the Belle Fourche and
-              Cheyenne Rivers are reserved exclusively for you. The hills and
-              draws of these river breaks provide abundant habitat for deer.
-              Large numbers of Mule Deer range in the breaks, while Whitetail
-              range on the bottom land. During your hunt in this &quot;deer
-              country&quot; you will not see any other hunters except those in
-              your party. But you will see trophy deer every day and you will
-              have opportunities to harvest. Your hunt will take place on
-              private property. The philosophy of Dakota Trophy Hunt is
-              conservation of game. Therefore, we encourage you to shoot only a
-              four point or better trophy buck (Western Count). We want to take
-              only those bucks who have reached maturity and sport a true trophy
-              class rack and thereby preserve a vigorous herd of deer so that
-              year after year we can offer a trophy buck. Methods of hunting
-              will vary according to which rancher/guide you hunt with and
-              terrain. We can accommodate anyone from the most vigorous mountain
-              hiker to the physically handicapped sportsman. Transportation to
-              and from camp and one hunting area to another will generally be by
-              a pickup or suburban. From there most hunts are spot and stalk.
-              Dakota Trophy Hunt will take care of all your needs during your
-              hunt. Three delicious meals will be served each day and hunters
-              always rave about the food. If you are hunting some distance from
-              the kitchen, you will take noon lunch with you. Your rancher/guide
-              will have you back in camp in time for a steak or prime rib type
-              of dinner at night. While hunting you will see numerous bucks and
-              will have no problem scoring, if your rifle is zeroed in and you
-              have practiced with it. Sight your rifle in for 100-yard or
-              200-yard shots, depending on what you are accustomed to. <br />
-              Some hunters take their meat and heads home with them, however we
-              have families in need close by if you choose to donate meat. We
-              also have an outstanding taxidermist available with reasonable
-              rates. Many of our hunters use this option when they have
-              availability. Some hunters choose to drive their own automobile to
-              our camp while others fly into Rapid City to be picked up and
-              taken back by Dakota Trophy. Since our hunting facilities are
-              limited, we book only the number of hunters that each rancher can
-              fill with trophy bucks. We book early and are years out! <br />
-            </p>
+  <v-container fluid grid-list-md>
+    <v-layout row wrap xs10>
 
-            <p style="font-weight: bold" class="text-center">
-              More Trophy Class Bucks per square mile than anywhere on the
-              continent
-              <br />
-
-              High success rates <br />
-              Unprecedented hunter satisfaction since 1965
-            </p>
-          </v-col>
-        </v-row>
-      </v-card-text>
-    </v-card>
-    <v-card flat class="pa-4 ma-4">
-      <v-card-title>
-        <v-flex sm6 offset-sm3 xs12> </v-flex>
-      </v-card-title>
-      <v-card-text
-        sm10
-        offset-sm1
-        xs12
-        style="
-          color: black;
-          font-family: Tahoma, Geneva, sans-serif;
-          font-size: 16px;
-        "
-      >
-        <v-row>
-          <v-col cols="12" md="8">
-            <h3 class="headline mb-0" style="text-align: center">
-              Archery Deer Hunts
-            </h3>
-            <div
-              style="
-                font-family: europa;
-                font-weight: 300;
-                font-style: normal;
-                font-size: 16px;
-              "
-              v-html="ArcheryDeer"
-            ></div
-          ></v-col>
-          <v-col cols="12" md="4"
-            ><v-img :src="'/img/Deer/Mule Deer/2021/Kyle Bratton.jpg'"></v-img
-          ></v-col>
-        </v-row>
-      </v-card-text>
-    </v-card>
-
-    <v-card flat class="pa-4 ma-4">
-      <v-card-title>
-        <v-flex sm6 offset-sm3 xs12> </v-flex>
-      </v-card-title>
-      <v-card-text
-        sm10
-        offset-sm1
-        xs12
-        style="
-          color: black;
-          font-family: Tahoma, Geneva, sans-serif;
-          font-size: 16px;
-        "
-      >
-        <v-row>
-          <v-col md="4" cols="12"
-            ><v-img :src="'/img/Turkey/Solomons and Baumans 2013.jpg'"></v-img
-          ></v-col>
-          <v-col md="8" cols="12">
-            <h3 class="headline mb-0" style="text-align: center">
-              Merriam Turkey Hunts
-            </h3>
-            <div style="color: black" v-html="Turkeys"></div
-          ></v-col>
-        </v-row>
-      </v-card-text>
-    </v-card>
-
-    <v-card flat class="pa-4 ma-4">
-      <v-card-title>
-        <v-flex sm6 offset-sm3 xs12> </v-flex>
-      </v-card-title>
-      <v-card-text
-        sm10
-        offset-sm1
-        xs12
-        style="
-          color: black;
-          font-family: Tahoma, Geneva, sans-serif;
-          font-size: 16px;
-        "
-      >
-        <v-row>
-          <v-col md="8" cols="12">
-            <h3 class="headline mb-0" style="text-align: center">
-              Antelope Hunts
-            </h3>
-            <div style="color: black" v-html="Antelope"></div
-          ></v-col>
-          <v-col md="4" cols="12"
-            ><v-img
-              :src="'/img/Antelope/2018/Ron Pringle antelope 2.jpg'"
-            ></v-img
-          ></v-col>
-        </v-row>
-      </v-card-text>
-    </v-card>
-
-    <v-card flat class="pa-4 ma-4">
-      <v-card-title>
-        <v-flex sm6 offset-sm3 xs12> </v-flex>
-      </v-card-title>
-      <v-card-text
-        sm10
-        offset-sm1
-        xs12
-        style="
-          color: black;
-          font-family: Tahoma, Geneva, sans-serif;
-          font-size: 16px;
-        "
-      >
-        <v-row>
-          <v-col cols="12">
-            <h3 class="headline mb-0" style="text-align: center">
-              Pheasant Hunting
-            </h3>
-            <div style="color: black" class="text-center">
-              <p>
-                We are currently in the process of trying to start up a pheasant
-                hunting operation. We have some birds established and are hoping
-                to continue to work on this in the next couple of eyars!
-                <br />
-                If you are interested, please let us know and we can add you to
-                our list to send information to once we have our pheasant
-                hunting up and running!
-              </p>
-            </div>
-          </v-col>
-        </v-row>
-      </v-card-text>
-    </v-card>
-
-    <v-card flat class="pa-4 ma-4">
-      <v-card-title>
-        <v-flex sm6 offset-sm3 xs12> </v-flex>
-      </v-card-title>
-      <v-card-text
-        sm10
-        offset-sm1
-        xs12
-        style="
-          color: black;
-          font-family: Tahoma, Geneva, sans-serif;
-          font-size: 16px;
-        "
-      >
-        <v-row>
-          <v-col cols="12">
-            <h3 class="headline mb-0" style="text-align: center">
-              Predator Control Hunts
-            </h3>
-            <v-row>
-                <v-col style="justify-content: center;display: flex;">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/giybC6f_lTY?si=b4iN9zgSDKY4e4qv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </v-col>
-              </v-row>
-            <div style="color: black" class="text-center">
-              <p>
-                Enjoy the thrill of hunting coyotes and other small game animals
-                with experienced predator hunters. We offer coyote calling in
-                the daylight or at night using thermal equipment. All predator
-                control hunts take place on private land and are generally run
-                in late fall or winter. We can run calling/trapping hunts from
-                early from Oct 20-31. After deer season, we will do
-                calling/trapping or baited hunts from Dec 15-Mar 15. Most
-                hunters will have the opportunity to harvest coyotes, racoons,
-                porcupine, badger, and/or fox during their hunt. We prefer to
-                take groups of up to 6 to make sure that we have enough thermal
-                equipment for everyone to have ample opportunity to shoot. If
-                you have proper equipment for thermal hunting, you are welcome
-                to bring your own, otherwise we will provide rifles and thermal
-                equipment for these hunts. You will be guided in groups of 2. We
-                can take a single person if you are a lone hunter. Most thermal
-                hunts will be 3 days/nights but can be customized for whatever
-                suits your schedule and interest. We recommend a minimum of 3
-                days/nights to help avoid undesirable weather, wind, or moon
-              </p>
-            </div>
-          </v-col>
-        </v-row>
-      </v-card-text>
-    </v-card>
-
-    <v-card flat class="pa-4 ma-4">
-      <v-card-title>
-        <v-flex sm6 offset-sm3 xs12> </v-flex>
-      </v-card-title>
-      <v-card-text
-        sm10
-        offset-sm1
-        xs12
-        style="
-          color: black;
-          font-family: Tahoma, Geneva, sans-serif;
-          font-size: 16px;
-        "
-      >
-        <v-row>
-          <v-col cols="12">
-            <h3 class="headline mb-0" style="text-align: center">
-              Fossil Hunts
-            </h3>
-            <div style="color: black" class="text-center">
-              <p>
-                Have you ever wondered what was on the Earth before we were? We
-                offer custom family friendly adventures for the outdoor
-                enthusiasts that also love rocks, fossils, minerals, and
-                crystals. Come discover what was in the ocean about 73.5 million
-                years ago. On Elk Creek in South Dakota, we find many colorful
-                ammonite species including scaphites, baculites, Placenticeras,
-                nautilus, and the giant clam. We also find large septarian
-                concretions filled with minerals like calcite or golden barite,
-                and often with a cephalopod preserved in the center. The species
-                are often preserved with their very colorful and iridescent
-                shell still unaltered and intact. The rainbow colors of their
-                shell make them one of the most desirable fossils for
-                collectors. These adventures can be customizable to suit each
-                person or family. Generally, we run these from
-                mid-July-September but can usually add on a little fossil
-                hunting to another adventure.
-              </p>
-            </div>
-          </v-col>
-        </v-row>
-      </v-card-text>
-    </v-card>
-
-    <v-card flat class="pa-4 ma-4">
-      <v-card-title>
-        <v-flex sm6 offset-sm3 xs12> </v-flex>
-      </v-card-title>
-      <v-card-text
-        sm10
-        offset-sm1
-        xs12
-        style="
-          color: black;
-          font-family: Tahoma, Geneva, sans-serif;
-          font-size: 16px;
-        "
-      >
-        <v-row>
-          <v-col cols="12">
-            <h3 class="headline mb-0" style="text-align: center">
-              Fishing/Shed Hunting
-            </h3>
-            <div style="color: black" class="text-center">
-              <p>
-                We can offer day fishing excursions in private stock dams, the
-                Cheyenne River, and Elk Creek. Species of fish include (at
-                times, depending on weather, drought and quantity) catfish,
-                northern pike, bass, walleye, perch, and blue gill. This is
-                mainly offered as an add-on to another adventure!
-                <br />
-                <br />
-                You can also come pick up naturally shed antlers off trophy mule
-                deer and whitetail. Shed hunting is on farm fields and in the
-                creek and river breaks. As with fishing, shed hunting is
-                generally offered as an add on to another adventure or an
-                activity to fill time during the day!
-              </p>
-            </div>
-          </v-col>
-        </v-row>
-      </v-card-text>
-    </v-card>
-
-    <v-card flat class="pa-4 ma-4">
-      <v-card-title>
-        <v-flex sm6 offset-sm3 xs12>
-          <h3
-            class="headline mb-0"
-            style="
-              text-align: center;
-              font-size: 16px;
-              font-family: Tahoma, Geneva, sans-serif;
-              white-space: nowrap;
-            "
-          >
-            General Information For All Hunts
-          </h3>
-        </v-flex>
-      </v-card-title>
-      <v-card-text
-        sm10
-        offset-sm1
-        xs12
-        style="
-          color: black;
-          font-family: Tahoma, Geneva, sans-serif;
-          font-size: 16px;
-        "
-      >
-        <div style="color: black" v-html="Misc"></div>
-      </v-card-text>
-    </v-card>
-
-    <v-card flat class="pa-4 ma-4">
-      <v-card-title>
-        <v-flex sm6 offset-sm3 xs12>
-          <h3 class="headline mb-0" style="text-align: center">Non Hunters</h3>
-        </v-flex>
-      </v-card-title>
-      <v-card-text
-        sm10
-        offset-sm1
-        xs12
-        style="
-          color: black;
-          font-family: Tahoma, Geneva, sans-serif;
-          font-size: 16px;
-        "
-      >
-        <div style="color: black" v-html="NonHunters"></div>
-      </v-card-text>
-    </v-card>
-
-    <v-card flat class="pa-4 ma-4">
-      <v-card-title>
-        <v-flex sm6 offset-sm3 xs12>
-          <h3 class="headline mb-0" style="text-align: center">
-            Accommodations
-          </h3>
-        </v-flex>
-      </v-card-title>
-      <v-card-text
-        sm10
-        offset-sm1
-        xs12
-        style="
-          color: black;
-          font-family: Tahoma, Geneva, sans-serif;
-          font-size: 16px;
-        "
-      >
-        <div style="color: black" v-html="Accommodations"></div>
-      </v-card-text>
-    </v-card>
-
-    <v-card flat class="pa-4 ma-4">
-      <v-card-title>
-        <v-flex sm6 offset-sm3 xs12>
-          <h3 class="headline mb-0" style="text-align: center">
-            Licensing/Tags
-          </h3>
-        </v-flex>
-      </v-card-title>
-      <v-card-text
-        sm10
-        offset-sm1
-        xs12
-        style="
-          color: black;
-          font-family: Tahoma, Geneva, sans-serif;
-          font-size: 16px;
-        "
-      >
-        <div style="color: black">
-          SD does have a lottery draw system with preference points. Preference
-          points are $5 for a resident and $10 for a nonresident per drawing.
-          License costs vary depending on the application and the species.
-          <br />
-          <ul>
-            <li>
-              <b>Rifle deer</b> – We have two separate drawings: West River
-              Special Buck and West River Deer. West River Special Buck is a
-              private land only tag and good for any unit west of the Missouri
-              River except the Black Hills and reservation units. The West River
-              Deer drawing is for the same deer and same season, but it can be
-              used on private or public land and is unit specific. It currently
-              takes around two to three years to draw the mule deer tag and
-              around one to two for a whitetail tag. West River Special
-              applications are generally due mid April. West River Deer
-              applications are due mid June. Preference points can be purchased
-              from Sept 15 through Dec 15.
-            </li>
-            <li>
-              <b>Archery deer</b> – Archery deer tags are unlimited for hunters
-              on private land. You do still have to “apply” for the license, but
-              it is practically a guarantee.
-            </li>
-            <li>
-              <b>Turkeys</b> – Turkey licenses are hard to draw on the first
-              round. Most of our hunters draw in the third round or pick up
-              their tags in the leftovers. Applications are generally due mid
-              February and the third round is mid March. It is not a guarantee,
-              but we have never had a turkey hunter not get a license.
-              Preference points can be purchased in years prior up to Dec 15.
-            </li>
-            <li>
-              <b>Antelope</b> – Antelope licenses are hard to draw. Similar to
-              the rifle deer, there is a Special Antelope drawing for private
-              land only tags. It usually tags a point or two to draw antelope.
-              Timelines are the same as deer for applications.
-            </li>
-          </ul>
-        </div>
-      </v-card-text>
-    </v-card>
-
-    <v-card flat class="pa-4 ma-4">
-      <v-card-title>
-        <v-flex sm6 offset-sm3 xs12>
-          <h3
-            class="headline mb-0"
-            style="text-align: center; white-space: nowrap"
-          >
-            FAQ
-          </h3>
-        </v-flex>
-      </v-card-title>
-      <v-card-text
-        sm10
-        offset-sm1
-        xs12
-        style="
-          color: black;
-          font-family: Tahoma, Geneva, sans-serif;
-          font-size: 16px;
-        "
-      >
-        <div style="color: black">
-          <b>How do I book a hunt?</b>
-          <br />
-          To book a hunt we require a deposit upon
-          booking. You are not booked until a deposit is on file! Final payment
-          is due upon arrival or 30 days prior to arrival. Deposits are
-          nonrefundable. If you do not draw the license (and have proof of
-          application and preference point purchases) we will refund your
-          deposit or roll you forward to the next available year. To book your hunt, contact Tomilyn at 605-441-1685!
-          <br /><br />
-          <b>What kind of success can I expect?</b>
-          <br /> Unless you are looking for a
-          B&amp;C trophy you can be assured of several chances at nice trophy
-          animals. The rest is up to you. We generally have a 98-100% success
-          rate on rifle deer, around 50% success on archery deer, 150-200%
-          success on turkeys, and have never had an antelope hunter go home
-          eating tag soup. 
-          <br /><br />
-        <b>What&#39;s the best firearm to bring?</b>
-          <br /> 
-          Big deer (and antelope) can be tough, we recommend a .270 or larger rifle, but more
-          important is accuracy. Practice with your gun and know exactly where
-          it is shooting. Practice, practice, practice. Obviously, on turkey
-          hunts, most hunters already have a favorite shotgun, and on archery
-          hunts, we hope you plan on bringing a bow. 
-          <br /><br />
-          <b>How do I get a license?</b>
-          <br /> 
-          We will send information on how to apply and deadlines. You will need to
-          acquire preference points for multiple years before the year you plan
-          to hunt. We help you through this process. Please pay attention to the
-          information we send you as if you don’t get the proper points it can
-          deter a hunt you’ve had booked for years. We do not have transferable
-          landowner tags, so if you do not draw the proper tag through the
-          SDGF&amp;P, you are out of luck. 
-          <br /><br />
-          <b>What is your guarantee? </b>
-          <br />
-          We guarantee 100% effort in assisting you to a trophy animal you will be proud of.
-          We can&#39;t control weather, marksmanship, or luck.
-        </div>
-      </v-card-text>
-    </v-card>
-  </div>
+      <v-flex v-for="(item, i) in hunts" :key="i" xs12 sm12 md6 lg3>
+        <v-hover v-slot="{ hover }">
+          <v-card @click="goToHunt(item)" :class="{ 'hovered': hover }">
+            <v-img :src="item.img" cols="12" md="4" style="max-height: 250px; min-height: 250px;" class="pa-4">
+              <template v-if="hover">
+                <div class="hover-overlay"></div>
+                <div class="hover-text">{{ item.Name }}</div>
+              </template>
+            </v-img>
+          </v-card>
+        </v-hover>
+      </v-flex>
+      <hr />
+      <shared-footer></shared-footer>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
+import SharedFooter from "./Hunting/SharedFooter.vue";
 export default {
   name: "Hunting",
-  components: {},
+  components: {
+    SharedFooter,
+  },
   methods: {
     getdata() {},
+    goToHunt(item) {
+      window.location = item.Route;
+    },
   },
   data: function () {
     return {
-      ArcheryDeer:
-        "We decided to offer archery hunting as an answer to the many requests from hunters who are archers. We have only been offering archery hunting for a short time, compared to the rifle hunts. We take a very limited number of archery hunters, mainly because we are extremely busy with fall cattle work right during archery season. Archery deer season opens on September 1 of every year and runs through the end of the year. We will not take archery hunters during rifle season. Hunt dates are more flexible, just please contact us for availability. Archery hunts are run differently than the rifle hunts. We hunt the same deer and the same area, just at different times. We do five-day hunts with a base price for the hunt, and then a trophy fee for blood drawn. We feel this is the best way to make sure it is fair for everyone because the success rate with archery is much less than with a rifle. We also don’t want people to take marginal or “iffy” shots and then have a wounded animal. Archery mule deer are full guided, archery whitetail hunts are semi- guided with a heavy use of blinds. Most of the archery hunting is from ground blinds (natural blinds, bale blinds, or some fiberglass blinds). We do limited spot and stalk with archery. We do not have tree stands. Blinds are placed on travel corridors to and from alfalfa fields or other crops. Archery licenses are unlimited on private land – so drawing is not a problem. You do still have to put in through the lottery draw system.",
-      Antelope:
-        "Our antelope hunts are very limited. We take only a couple of antelope hunters a year as the herds move frequently and herd size varies drastically. We hunt the same land as for deer, but antelope are generally found more on the flat ground than the river breaks. We do five day, fully-guided hunts. Season opens up the first weekend in October and we like to take our hunters right away in season.",
-      Turkeys:
-        "The river breaks and creek bottoms of western SD are home to an unbelievable number of Merriam turkeys. We offer turkey hunts mainly on the home place and a few surrounding ranches. We can hunt over 60,000 acres of private land to make sure you have the best opportunity at a trophy Merriam. Our hunters enjoy unequalled success year in and year out. Many trophies are eligible for the record book. <br> We currently hold 2 of the top 5 spots for Merriam turkeys in the record book – and yes, there is a record book for turkeys! Turkey season opens in mid April and runs through the end of May. We prefer to take our hunters on the weekends. Our turkey hunts are 3 day semi-guided hunts. We do one bird hunts with the option to take a second bird on a trophy fee. We can offer full-guided hunts upon request for an extra fee. We provide you with a vehicle (usually an ATV) to hunt with.",
-      Accommodations:
-        "Our accommodations are not what you would see in a 5-star resort, but it is also not a tent camp in the wilderness. We have small bunkhouse style cabins (some with electric heat, some with a wood stove). The beds do have bedding, but we recommend that you bring a sleeping bag for extra warmth if you have room. Besides the bunkhouse style cabins, the upstairs of Tomilyn’s house is used for lodging. There is a detached shower house with two complete bathrooms - there are towels provided. For husband/wife couples, we usually have them stay in a spare bedroom in the main house or in a camper for privacy. We serve meals in a garage attached to our house that is just a short distance from where you will be staying. We also have a pool table that you are more than welcome to use while socializing. We do our best to meet everyone&#39;s needs for accommodations, but if you have a special need, please let us know early so we can prepare! We are in the process of updating our accommodations, but life is busy, so it may be a few years until the work is complete!",
       Hunts:
         '<div><font color="#000000" face="Tahoma, Geneva, sans-serif" size="3">Our rifle deer hunts are done through the corporation Dakota Trophy Hunt. We have been hunting rifle deer since 1965. Tom is in charge of the booking for Dakota Trophy Hunt and has been since 1987. As of recently, he has been assisted by Tomilyn with the booking and paperwork.&nbsp; We do archery deer, turkey, and antelope separately.</font></div><div><font color="#000000" face="Tahoma, Geneva, sans-serif" size="3"><br></font></div><div><font color="#000000" face="Tahoma, Geneva, sans-serif" size="3">We do not do a lot of antelope hunting, but we do take antelope hunters occastionally. Please call or email for details!</font></div><div><font color="#000000" face="Tahoma, Geneva, sans-serif" size="3"><br></font></div><div><font color="#000000" face="Tahoma, Geneva, sans-serif" size="3">Call the references, book the hunt -you\'ll be glad you did!</font></div>',
-      Deer: "",
-      //FAQ: "",
-      Misc: "<p><strong>Hunts include:</strong> Lodging – We have a base camp with bunkhouse-style accommodations. It is not a fancy 5-star lodge, but suitable for a hunting camp! *See more below! Meals and beverages – Three meals and basic beverages are provided. Transportation to and from Rapid City Regional Airport – please just be in contact with us if you plan to fly so we can accommodate flight times. Full or Semi-guided hunting - depending on the hunt booked. All of our rifle deer hunts are fully guided – no exceptions! Alcoholic beverages within reason - if you require or want something very specific, you may want to bring that yourself!</p> <p><strong>Hunts do NOT include:</strong> Licenses – We have a lottery draw system. We will assist you through the application process, but the cost of the license is up to you! *See more below! Taxes required by the state of South Dakota – The current state sales tax rate is 6%. Taxidermy services – We have a taxidermist available if needed, or you are welcome to take your trophy home to your own taxidermist. Meat processing – We have the option of someone who can process meat, or facilities for you to do it yourself if wanted. Shipping of trophies or meat – Most guys prefer to take home with them, if you want to ship, we will help if possible. Gratuity for Guides & Staff Firearms and ammunition – These can be available at reasonable cost with advance notice.</p>",
-      // Licensing:
-      //   "SD does have a lottery draw system with preference points. Preference points are $5 for a resident and $10 for a nonresident per drawing. License costs vary depending on the application and the species. Rifle deer – We have two separate drawings: West River Special Buck and West River Deer. West River Special Buck is a private land only tag and good for any unit west of the Missouri River except the Black Hills and reservation units. The West River Deer drawing is for the same deer and same season, but it can be used on private or public land and is unit specific. It currently takes around two to three years to draw the mule deer tag and around one to two for a whitetail tag. West River Special applications are generally due mid April. West River Deer applications are due mid June. Preference points can be purchased from Sept 15 through Dec 15. Archery deer – Archery deer tags are unlimited for hunters on private land. You do still have to “apply” for the license, but it is practically a guarantee. Turkeys – Turkey licenses are hard to draw on the first round. Most of our hunters draw in the third round or pick up their tags in the leftovers. Applications are generally due mid February and the third round is mid March. It is not a guarantee, but we have never had a turkey hunter not get a license. Preference points can be purchased in years prior up to Dec 15. Antelope – Antelope licenses are hard to draw. Similar to the rifle deer, there is a Special Antelope drawing for private land only tags. It usually tags a point or two to draw antelope. Timelines are the same as deer for applications.",
-      NonHunters:
-        "Non-hunters are welcome, just please let us know if you plan on bringing a non-hunting companion as it may depend on our accommodation availability! Please ask for the current pricing for a non-hunting companion.",
+      hunts: [
+        {
+          Name: "Rifle Deer",
+          Route: "/Hunting/RifleDeer",
+          img: "/img/Rifledeer.JPG",
+        },
+        {
+          Name: "Archery Deer",
+          Route: "/Hunting/ArcheryDeer",
+          img: "/img/ArcheryDeer.jpg",
+        },
+        {
+          Name: "Antelope",
+          Route: "/Hunting/Antelope",
+          img: "/img/Antelope/2018/Ron Pringle antelope 2.jpg",
+        },
+        {
+          Name: "Turkey",
+          Route: "/Hunting/Turkey",
+          img: "/img/Turkey/Solomons and Baumans 2013.jpg",
+        },
+        { Name: "Pheasant", Route: "/Hunting/Pheasant", img: "https://images.pexels.com/photos/17980103/pexels-photo-17980103/free-photo-of-pheasant-on-a-hayfield.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
+        { Name: "Predator", Route: "/Hunting/Predator", img: "https://images.pexels.com/photos/1603783/pexels-photo-1603783.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
+        { Name: "Fossil", Route: "/Hunting/FossilHunting", img: "img/Fossil.jpg" },
+        { Name: "Fishing/Shed", Route: "/Hunting/ShedHunting", img: "/img/Justin Fishing.png" },
+      ],
     };
   },
   mounted: function () {
@@ -602,8 +76,25 @@ export default {
 };
 </script>
 <style>
-div {
-  font-size: 16px;
-  font-family: Tahoma, Geneva, sans-serif;
+.hovered .hover-overlay {
+  background: rgba(0, 0, 0, 0.5); /* Darker background color */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  filter: blur(8px); /* Blur effect */
+}
+
+.hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Adjust the color according to your design */
+  font-size: 18px; /* Adjust the font size as needed */
+  z-index: 2;
 }
 </style>

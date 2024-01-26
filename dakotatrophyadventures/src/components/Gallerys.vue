@@ -81,16 +81,16 @@ export default {
         },
         {
           galleryId: 7,
-          name: "Other Animals",
+          name: "Personal Hunts",
           url: "/img/Other Animals/2009 Yukon moose.jpg\t\t\t\t\t\t\t\t\t   ",
         },
-        { galleryId: 8, name: "Misc", url: "/img/misc/Spring 09 051.JPG" },
+        //{ galleryId: 8, name: "Misc", url: "/img/misc/Spring 09 051.JPG" },
         {
           galleryId: 9,
           name: "Trail Camera",
           url: "/img/Trail Camera/MFDC3328.JPG",
         },
-        { galleryId: 10, name: "Horses", url: "/img/horses/Archery 358.JPG" },
+        { galleryId: 10, name: "Ranch", url: "/img/horses/Archery 358.JPG" },
       ],
       loading: false,
     };

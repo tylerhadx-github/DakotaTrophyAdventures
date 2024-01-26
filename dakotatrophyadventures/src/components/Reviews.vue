@@ -124,6 +124,12 @@ export default {
           author: "Mitch Engle",
         },
         {
+          images: [898],
+          content:
+            "I've hunted with Dakota Trophy five times over the past eight years.  I've always had a great time with the Trasks.  I have always hunted white-tail deer with great success.  My trophies have scored from 138- 162. The first year or so my problem was not passing the 140 deer.  Since then, the last three bucks have been over 150.  Any hunter who can shoot( and pass 140 bucks) has a real chance at a monster. I have hunted alot of places throughout the west and have never been to a place with so much game and so many trophy bucks. The food is first class and the folks at Dakota Trophy have become great friends.",
+          author: "P. Rutt-- Wyoming (originally from Pennsylvania)",
+        },
+        {
           images: [118],
           content:
             "I've hunted turkeys with these fine folks several times and what an awesome experience I had each time. Great people, great experience, and great hunting.",
@@ -136,12 +142,13 @@ export default {
           author: "Jim MacDougall",
         },
         {
-          images: [24],
+          images: [24, 1135],
           content:
             "Over the years I have been fortunate enough to hunt in several Western states. Dakota Trophy is as good as any and better than most.",
           author: "Arlen Vacura",
         },
         {
+          images: [1327, 86],
           content:
             "I have hunted with Dakota Trophy Hunt about ten years. I have taken many trophy bucks, both mule deer and whitetail. Hunters can expect to see many deer during their stay and will have numerous opportunities to harvest a trophy. I have taken mule deer bucks in the 180-185 B.&C. range, the widest being 29 1/2 inches. I have also taken a mule deer buck with 29 inch main beams. So far as whitetail goes I have taken many trophy bucks. 10 pointers are usually the norm. My bucks have been in the 150 B.&C. range. There are many taken each year larger. In fact I have seen 16 pointers come into camp, as well as 7x7 typical bucks. This area of drainages is one of the best areas on the continent to hunt. I have hunted in Alberta, Sask., Wyoming, Montana, Maine, New York, and South Carolina. South Dakota is my favorite by far. Dakota Trophy has built new camps last year and are very comfortable. The food is always great. Airport pick-up is included in the price. The ranchers in this coalition have a common goal, to produce trophy animals and put their hunters in position for a shot. The walls of my trophy rooms are a testament to this commitment. Overall on a scale of 1 to 10, Dakota Trophy Hunt gets a ten every time.",
           author: "Bob D.",
@@ -173,6 +180,7 @@ export default {
           author: "John 'K'",
         },
         {
+          images: [34],
           content:
             "Kevin Gross  Ex- Major League Baseball of 17 year and Host of the Outdoor show Hunting with the Pros on The Sportsman Channel. I have been hunting with Dakota Trophy hunts for the past 7 years with family and friends and have done several  Outdoor TV shows here. We have had 100% success with taken Mule Deer up to 193  & Whitetails in the 160's. The quantity and quality of deer here is unbelievable do to a high management program. They distribute the hunters over several thousand acres and allocate only a few hunters to each ranch making for a quality hunt. The accommodations have improved and the meals are incredible, all the Guides are fun and friendly it's a family atmosphere, this is a hunt we look forward to every year.  The price of this hunt is very respectable for the quality of animals. I would highly recommend this hunt for any age to give them a try.  See ya all there",
           author: "Kevin Gross",
@@ -182,13 +190,9 @@ export default {
             "My experience with Dakota Trophy Adventures was fabulous!!  The amount and quality of game you see is incredible.  The deer are managed very well, which increases the opportunity to harvest a quality animal. Tom and Shelia thank you for your hospitality and a hunt of a lifetime!  I will be back!!",
           author: "Steve E.",
         },
+        
         {
-          images: [898],
-          content:
-            "I've hunted with Dakota Trophy five times over the past eight years.  I've always had a great time with the Trasks.  I have always hunted white-tail deer with great success.  My trophies have scored from 138- 162. The first year or so my problem was not passing the 140 deer.  Since then, the last three bucks have been over 150.  Any hunter who can shoot( and pass 140 bucks) has a real chance at a monster. I have hunted alot of places throughout the west and have never been to a place with so much game and so many trophy bucks. The food is first class and the folks at Dakota Trophy have become great friends.",
-          author: "P. Rutt-- Wyoming (originally from Pennsylvania)",
-        },
-        {
+          images: [1121],
           content:
             "Excellent hunting experience! The most deer I have ever seen with top quality racks. Friendly, knowledgeable guides who know the land and animals well. Dakota Trophy Hunts is a deer hunters paradise. Definitely will be a place I will revisit.",
           author: "Andy Jeffries",

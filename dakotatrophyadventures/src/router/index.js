@@ -12,9 +12,16 @@ const Reviews = () => import(/* webpackChunkName: "dates" */ '@/components/Revie
 const Map = () => import(/* webpackChunkName: "map" */ '@/components/Map.vue')
 const Hunting = () => import(/* webpackChunkName: "hunting" */ '@/components/Hunting.vue')
 const Taxidermy = () => import(/* webpackChunkName: "taxidermy" */ '@/components/Taxidermy.vue')
-const Archery = () => import(/* webpackChunkName: "archery" */ '@/components/Archery.vue')
 const Ranch = () => import(/* webpackChunkName: "ranch" */ '@/components/Ranch.vue')
 
+const PheasantHunting = () => import('@/components/Hunting/PheasantHunting.vue')
+const PredatorHunting = () => import('@/components/Hunting/PredatorHunting.vue')
+const TurkeyHunting = () => import('@/components/Hunting/TurkeyHunting.vue')
+const AntelopeHunting = () => import('@/components/Hunting/AntelopeHunting.vue')
+const ArcheryDeer = () => import('@/components/Hunting/ArcheryDeerHunting.vue')
+const RifleDeer = () => import('@/components/Hunting/RifleDeerHunting.vue')
+const ShedHunting = () => import('@/components/Hunting/ShedHunting.vue')
+const FossilHunting = () => import('@/components/Hunting/FossilHunting.vue')
 
 export default new Router({
   mode: 'history',
@@ -76,10 +83,51 @@ export default new Router({
        component: Hunting,
    },
    {
-       path: '/Archery',
-       name: 'Archery',
-       component:Archery,
-   },
+    path: '/Hunting/Turkey',
+    name: 'TurkeyHunting',
+    component: TurkeyHunting,
+},
+{
+    path: '/Hunting/Pheasant',
+    name: 'PheasantHunting',
+    component: PheasantHunting,
+},
+{
+    path: '/Hunting/ShedHunting',
+    name: 'ShedHunting',
+    component: ShedHunting,
+},
+{
+    path: '/Hunting/FossilHunting',
+    name: 'FossilHunting',
+    component: FossilHunting,
+},
+{
+    path: '/Hunting/Antelope',
+    name: 'AntelopeHunting',
+    component: AntelopeHunting,
+},
+{
+    path: '/Hunting/PredatorHunting',
+    name: 'PredatorHunting',
+    component: PredatorHunting,
+},
+{
+    path: '/Hunting/Turkey',
+    name: 'TurkeyHunting',
+    component: TurkeyHunting,
+},
+{
+    path: '/Hunting/ArcheryDeer',
+    name: 'ArcheryDeer',
+    component: ArcheryDeer,
+},
+{
+    path: '/Hunting/RifleDeer',
+    name: 'RifleDeer',
+    component: RifleDeer,
+},
+
    {
        path: '/Taxidermy',
        name: 'Taxidermy',
