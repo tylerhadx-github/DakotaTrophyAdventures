@@ -108,7 +108,7 @@ export default new Router({
     component: AntelopeHunting,
 },
 {
-    path: '/Hunting/PredatorHunting',
+    path: '/Hunting/Predator',
     name: 'PredatorHunting',
     component: PredatorHunting,
 },
