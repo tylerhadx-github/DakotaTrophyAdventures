@@ -51,7 +51,7 @@ export default {
         {
           Name: "Antelope",
           Route: "/Hunting/Antelope",
-          img: "/img/Antelope/2018/Ron Pringle antelope 2.jpg",
+          img: "/img/Antelope/2023/IMG_6281.jpg",
         },
         {
           Name: "Turkey",

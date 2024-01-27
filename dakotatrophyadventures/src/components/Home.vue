@@ -22,7 +22,7 @@
               operation primarily focused on mule deer, whitetail, antelope, and
               turkey hunting in Western South Dakota. We also offer summertime
               fossil hunting trips for the whole family, and fall/winter coyote
-              calling or thermal hunts as well as fishing and shed hutning. For
+              calling or thermal hunts as well as fishing and shed hunting. For
               specific information on the hunts we offer, please look at the
               Hunting tab. For information on the origins of Dakota Trophy and
               our family – the ones who handle the booking and run the camp –

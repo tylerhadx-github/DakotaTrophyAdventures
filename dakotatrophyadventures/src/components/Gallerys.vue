@@ -67,7 +67,7 @@ export default {
           name: "White-tailed Deer",
           url: "/img/Deer/Whitetail/2023/Bridger Isrealson.jpg",
         },
-        { galleryId: 3, name: "Antelope", url: "/img/Antelope/p_0016.jpg" },
+        { galleryId: 3, name: "Antelope", url: "/img/Antelope/2023/IMG_6281.jpg" },
         { galleryId: 4, name: "Turkey", url: "/img/Turkey/turkeys.jpg" },
         {
           galleryId: 5,
@@ -77,7 +77,7 @@ export default {
         {
           galleryId: 6,
           name: "Landscape",
-          url: "/img/Landscape/001.JPG\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  ",
+          url: "/img/Landscape/Elk Creek 2.jpg",
         },
         {
           galleryId: 7,
@@ -91,6 +91,7 @@ export default {
           url: "/img/Trail Camera/MFDC3328.JPG",
         },
         { galleryId: 10, name: "Ranch", url: "/img/horses/Archery 358.JPG" },
+        { galleryId: 11, name: "Predator", url: "/img/Predator/IMG_1259.jpg" },
       ],
       loading: false,
     };
