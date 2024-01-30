@@ -232,7 +232,36 @@
 
 <script>
 export default {
+  mounted() {
+    // Add FAQ structured data
+    const scriptTag = document.createElement("script");
+    scriptTag.type = "application/ld+json";
+    scriptTag.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I book a hunt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To book a hunt, we require a deposit upon booking..."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kind of success can I expect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Unless you are looking for a B&amp;C trophy..."
+          }
+        },
+        // Add more questions and answers as needed
+      ]
+    });
 
+    document.head.appendChild(scriptTag);
+  },
 }
 </script>
 

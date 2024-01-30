@@ -7,7 +7,7 @@
       prominent
       shrink-on-scroll
       src="/huntingbackground.jpg"
-      scroll-target="#scrolling-techniques-3"
+      :scroll-target="'#scrolling-techniques-3'"
     >
       <template v-slot:img="{ props }">
         <v-img v-bind="props" style="height: 450px"></v-img>
@@ -61,7 +61,6 @@
      <v-sheet
       id="scrolling-techniques-3"
       class="overflow-y-auto"
-      max-height="1000"
     >
     <v-main style="height: 1000px;" >
       <router-view></router-view>

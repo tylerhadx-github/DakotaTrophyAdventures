@@ -130,6 +130,11 @@ export default {
           author: "P. Rutt-- Wyoming (originally from Pennsylvania)",
         },
         {
+          images: [1401],
+          content: "I’ve been out to the Trask Family ranch twice to hunt Merriam turkeys. I can attest to why they call it a “family” ranch. Once you meet Tom, Shelia and the kids, you become family. They always make the trip worth wild and never fail to put you on birds to hunt. If you’re looking to go to a place where you can’t see a neighbor’s lights at night or hear the hum of traffic on the nearby road, this is your place. The night skies are lit up by the stars and you may wake up to snow in April. You’ll get to hunt your bird all alone or with help if needed. You’ll see plenty of other game like mule deer and whitetail. You’ll likely find some sheds or maybe even a fossil. If your up for a real adventure, hop on a side by side with the owner, Tom Trask, and go round up some cattle. The family will most likely be working on the ranch while you hunt, but always take time to make sure you’re well fed and enjoying your stay. Id recommend the turkey hunting for adults and kids. On one trip, my party had an 80 plus year old trying to complete his grand slam. He couldn’t get around like he could in his younger days, but the Trasks made sure to do everything possible to get his bird, and they did. It was a special moment shared by many that weekend.",
+          author: "Chad Lott"
+        },
+        {
           images: [118],
           content:
             "I've hunted turkeys with these fine folks several times and what an awesome experience I had each time. Great people, great experience, and great hunting.",
@@ -222,6 +227,39 @@ export default {
         (a, b) => b.imageId - a.imageId
       )[0].url;
     },
+    addJsonLdScript() {
+       // Generate JSON-LD script tags for reviews
+    this.testimonials.forEach((review) => {
+      const scriptTag = document.createElement("script");
+      scriptTag.type = "application/ld+json";
+      scriptTag.textContent = JSON.stringify({
+        "@context": "http://schema.org",
+        "@type": "Review",
+        "itemReviewed": {
+          "@type": "Organization",
+          "name": "Dakota Trophy Adventures"
+        },
+        "author": {
+          "@type": "Person",
+          "name": review.author
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5, // Replace with the actual rating if available
+          "bestRating": 5,
+          "worstRating": 1
+        },
+        "reviewBody": review.content,
+        "datePublished": "2024-01-30T18:13:53.017Z" // Replace with the actual date if available
+      });
+
+      document.head.appendChild(scriptTag);
+    });
+    },
+  },
+  mounted() {
+    // Add the JSON-LD script dynamically when the component is mounted
+    this.addJsonLdScript();
   },
 };
 </script>
