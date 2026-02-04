@@ -8,10 +8,10 @@ jobs:
       name: Deploying to Github Pages
       runs-on: ubuntu-latest
       steps:
-          - uses: actions/checkout@v2
-          - uses: actions/setup-node@v2
+          - uses: actions/checkout@v4
+          - uses: actions/setup-node@v4
             with:
-              node-version: '12'
+              node-version: '20'
           - name: Set Creds
             run: git config user.name "tyler.hadx@gmail.com" && git config user.email "tyler.hadx@gmail.com"
           - name: Remove packages
