@@ -4,8 +4,8 @@
       <v-col>
         <v-card flat>
           <v-card-title style="justify-content: center">
-            <h1 class="text-center" style="overflow-wrap: break-word">
-              Western South Dakota's Finest Hunting
+            <h1 class="text-center home-title">
+              <span class="nowrap">Western South Dakota's</span> <span class="nowrap">Finest Hunting</span>
             </h1>
           </v-card-title>
           <v-card-text>
@@ -70,12 +70,14 @@
                     align-items: center;
                   "
                 >
-                  Dakota Trophy Adventures operates a guiding service for
-                  Merriam turkeys in the spring, along with antelope hunts and
-                  archery deer hunts. While based out of the same camp, it is
-                  primarily a family business. The fossil hunting, family
-                  fishing trips, and predator control thermal hunts are also
-                  run by our family and based out of the ranch headquarters.
+                  Dakota Trophy Adventures operates a guiding service for a
+                  variety of hunts including Merriam turkeys in the spring,
+                  antelope, archery deer, and upland game birds (pheasant,
+                  sharptail grouse, chukar, and Hungarian partridge). While
+                  based out of the same camp, it is primarily a family business.
+                  We also offer fossil hunting trips for the whole family,
+                  fishing and shed hunting adventures, and thermal predator
+                  hunts for coyotes in the winter months.
                 </p></v-col
               >
               <v-col md="4" cols="12">
@@ -138,3 +140,20 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.home-title {
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .home-title {
+    font-size: 1.4rem;
+  }
+}
+</style>
