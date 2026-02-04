@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm ls:*)",
+      "Bash(npm outdated:*)",
+      "Bash(node -e:*)",
+      "Bash(if exist node_modules rmdir /s /q node_modules)",
+      "Bash(if exist package-lock.json del /f package-lock.json)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run lint:*)",
+      "Bash(timeout 15 npm run serve)",
+      "Bash(git rm:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(sort:*)",
+      "Bash(cmd //c \"del /f /q nul\")",
+      "Bash(cmd //c \"del \\\\\\\\?\\\\C:\\\\source\\\\github\\\\DakotaTrophyAdventures\\\\nul\")",
+      "Bash(powershell -Command \"Remove-Item -Path ''\\\\?\\\\C:\\\\source\\\\github\\\\DakotaTrophyAdventures\\\\nul'' -Force\")"
+    ]
+  }
+}
