@@ -4,12 +4,13 @@
 
       <v-flex v-for="(item, i) in hunts" :key="i" xs12 sm12 md6 lg3>
         <v-hover v-slot="{ hover }">
-          <v-card @click="goToHunt(item)" :class="{ 'hovered': hover }">
+          <v-card @click="goToHunt(item)" :class="{ 'hovered': hover }" class="hunt-card">
             <v-img :src="item.img" cols="12" md="4" style="max-height: 250px; min-height: 250px;" class="pa-4">
               <template v-if="hover">
                 <div class="hover-overlay"></div>
                 <div class="hover-text">{{ item.Name }}</div>
               </template>
+              <div class="mobile-label">{{ item.Name }}</div>
             </v-img>
           </v-card>
         </v-hover>
@@ -58,7 +59,7 @@ export default {
           Route: "/Hunting/Turkey",
           img: "/img/Turkey/Solomons and Baumans 2013.jpg",
         },
-        { Name: "Pheasant", Route: "/Hunting/Pheasant", img: "https://images.pexels.com/photos/17980103/pexels-photo-17980103/free-photo-of-pheasant-on-a-hayfield.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
+        { Name: "Upland Game", Route: "/Hunting/UplandGame", img: "/img/UplandGame/hunters-pheasants.png" },
         { Name: "Predator", Route: "/Hunting/Predator", img: "https://images.pexels.com/photos/1603783/pexels-photo-1603783.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
         { Name: "Fossil", Route: "/Hunting/FossilHunting", img: "/img/fossil.jpg" },
         { Name: "Fishing/Shed", Route: "/Hunting/ShedHunting", img: "/img/Justin fishing.png" },
@@ -93,8 +94,33 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white; /* Adjust the color according to your design */
-  font-size: 18px; /* Adjust the font size as needed */
+  color: white;
+  font-size: 18px;
   z-index: 2;
+}
+
+/* Mobile label - always visible on small screens */
+.mobile-label {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .mobile-label {
+    display: block;
+  }
+  .hover-text,
+  .hover-overlay {
+    display: none !important;
+  }
 }
 </style>

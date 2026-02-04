@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="shared-footer-wrapper">
   <v-card flat class="pa-4 ma-4">
       <v-card-title>
         <v-flex sm6 offset-sm3 xs12>
@@ -9,7 +9,6 @@
               text-align: center;
               font-size: 16px;
               font-family: Tahoma, Geneva, sans-serif;
-              white-space: nowrap;
             "
           >
             General Information For All Hunts
@@ -169,7 +168,7 @@
         <v-flex sm6 offset-sm3 xs12>
           <h3
             class="headline mb-0"
-            style="text-align: center; white-space: nowrap"
+            style="text-align: center"
           >
             FAQ
           </h3>
@@ -265,6 +264,33 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+/* Prevent horizontal overflow */
+.shared-footer-wrapper {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
+/* Ensure text wraps properly */
+.v-card-text {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Reduce padding/margin on mobile */
+@media (max-width: 600px) {
+  .v-card.pa-4.ma-4 {
+    padding: 8px !important;
+    margin: 8px !important;
+  }
+
+  .v-card-text {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  ul {
+    padding-left: 20px !important;
+  }
+}
 </style>

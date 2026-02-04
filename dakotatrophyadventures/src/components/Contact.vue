@@ -4,70 +4,56 @@
       <v-card-title style="justify-content: center">
         <h3 class="headline mb-0">Contact Us</h3>
       </v-card-title>
-      <v-card-text>
-        <v-row>
-          <v-col
-            style="
-              color: black;
-              font-family: Tahoma, Geneva, sans-serif;
-              font-size: 16px;
-            "
-          >
+      <v-card-text class="contact-content">
+        <v-row class="mb-2">
+          <v-col cols="12" class="contact-item">
             <v-btn
               href="tel:+16054411685"
               color="primary"
-              class="white--text"
-              dark
+              outlined
+              class="mb-2"
             >
               <v-icon left>mdi-phone</v-icon>
               (605) 441-1685
             </v-btn>
-            Tomilyn's Cell Best Method of Contact - you can call or text
+            <div class="contact-label">Tomilyn's Cell - Best Method of Contact (call or text)</div>
           </v-col>
         </v-row>
-        <v-row>
-          <v-col
-            style="
-              color: black;
-              font-family: Tahoma, Geneva, sans-serif;
-              font-size: 16px;
-            "
-          >
+        <v-row class="mb-2">
+          <v-col cols="12" class="contact-item">
             <v-btn
               href="tel:+16057982116"
               color="primary"
-              class="white--text"
-              dark
+              outlined
+              class="mb-2"
             >
               <v-icon left>mdi-phone</v-icon>
-              605-798-2116
+              (605) 798-2116
             </v-btn>
-            House
+            <div class="contact-label">House</div>
           </v-col>
         </v-row>
-        <v-row>
-          <v-col>
+        <v-row class="mb-2">
+          <v-col cols="12" class="contact-item">
             <v-btn
               href="mailto:huntdakotaTrophy@gmail.com"
               color="primary"
-              class="white--text"
-              dark
+              outlined
+              class="mb-2"
             >
               <v-icon left>mdi-email</v-icon>
-              huntdakotaTrophy@gmail.com Email Us
+              Email Us
             </v-btn>
+            <div class="contact-label">huntdakotaTrophy@gmail.com</div>
           </v-col>
         </v-row>
-        <v-row>
-          <v-col
-            style="
-              color: black;
-              font-family: Tahoma, Geneva, sans-serif;
-              font-size: 16px;
-            "
-          >
-            <p>21858 Mule Deer Drive</p>
-            <p>Wasta, SD 57791</p>
+        <v-row class="mb-4">
+          <v-col cols="12" class="contact-item">
+            <v-icon color="primary" class="mr-2">mdi-map-marker</v-icon>
+            <div class="contact-label">
+              21858 Mule Deer Drive<br>
+              Wasta, SD 57791
+            </div>
           </v-col>
         </v-row>
 
@@ -158,6 +144,44 @@ export default {
 </script>
 
 <style>
+/* Contact info styling */
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: black;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 16px;
+}
+
+.contact-label {
+  margin-top: 4px;
+  color: #333;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .contact-item .v-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-label {
+    text-align: center;
+    width: 100%;
+  }
+
+  .contact-item {
+    align-items: center;
+    text-align: center;
+  }
+}
+
 #fs-frm input,
 #fs-frm select,
 #fs-frm textarea,

@@ -15,6 +15,10 @@ const Taxidermy = () => import(/* webpackChunkName: "taxidermy" */ '@/components
 const Ranch = () => import(/* webpackChunkName: "ranch" */ '@/components/Ranch.vue')
 
 const PheasantHunting = () => import('@/components/Hunting/PheasantHunting.vue')
+const UplandGame = () => import('@/components/Hunting/UplandGame.vue')
+const ChukarHunting = () => import('@/components/Hunting/ChukarHunting.vue')
+const HungarianPartridgeHunting = () => import('@/components/Hunting/HungarianPartridgeHunting.vue')
+const SharptailGrouseHunting = () => import('@/components/Hunting/SharptailGrouseHunting.vue')
 const PredatorHunting = () => import('@/components/Hunting/PredatorHunting.vue')
 const TurkeyHunting = () => import('@/components/Hunting/TurkeyHunting.vue')
 const AntelopeHunting = () => import('@/components/Hunting/AntelopeHunting.vue')
@@ -91,6 +95,26 @@ export default new Router({
     path: '/Hunting/Pheasant',
     name: 'PheasantHunting',
     component: PheasantHunting,
+},
+{
+    path: '/Hunting/UplandGame',
+    name: 'UplandGame',
+    component: UplandGame,
+},
+{
+    path: '/Hunting/Chukar',
+    name: 'ChukarHunting',
+    component: ChukarHunting,
+},
+{
+    path: '/Hunting/HungarianPartridge',
+    name: 'HungarianPartridgeHunting',
+    component: HungarianPartridgeHunting,
+},
+{
+    path: '/Hunting/SharptailGrouse',
+    name: 'SharptailGrouseHunting',
+    component: SharptailGrouseHunting,
 },
 {
     path: '/Hunting/ShedHunting',
