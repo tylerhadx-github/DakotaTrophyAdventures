@@ -2,6 +2,7 @@
   <v-app :style="{ background: 'var(--color-background)' }">
     <!-- Navigation Bar -->
     <v-app-bar
+      v-if="!isFullscreenRoute"
       app
       :class="['app-nav', { 'nav-scrolled': isScrolled }]"
       :color="isScrolled ? 'white' : 'transparent'"
@@ -80,6 +81,7 @@
 
     <!-- Mobile Navigation Drawer -->
     <v-navigation-drawer
+      v-if="!isFullscreenRoute"
       v-model="sidebar"
       app
       temporary
@@ -134,7 +136,7 @@
       </v-main>
 
       <!-- Site Footer -->
-      <footer class="site-footer">
+      <footer v-if="!isFullscreenRoute" class="site-footer">
         <v-container>
           <v-row>
             <v-col cols="12" md="4" class="footer-section">
@@ -219,6 +221,10 @@ export default {
     },
     isMobile() {
       return this.windowWidth < 960;
+    },
+    isFullscreenRoute() {
+      // Hide nav/footer for fullscreen routes like Slideshow
+      return this.$route.name === 'Slideshow';
     },
   },
 

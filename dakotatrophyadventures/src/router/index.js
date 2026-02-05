@@ -3,6 +3,9 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
+// Store scroll positions keyed by route full path
+const scrollPositions = {}
+
 const Contact = () => import(/* webpackChunkName: "contact" */ '@/components/Contact.vue')
 const Home = () => import(/* webpackChunkName: "home" */ '@/components/Home.vue')
 const Gallery = () => import(/* webpackChunkName: "gallery" */ '@/components/Gallery.vue')
@@ -26,10 +29,12 @@ const ArcheryDeer = () => import('@/components/Hunting/ArcheryDeerHunting.vue')
 const RifleDeer = () => import('@/components/Hunting/RifleDeerHunting.vue')
 const ShedHunting = () => import('@/components/Hunting/ShedHunting.vue')
 const FossilHunting = () => import('@/components/Hunting/FossilHunting.vue')
+const SlideshowBuilder = () => import('@/components/SlideshowBuilder.vue')
+const Slideshow = () => import('@/components/Slideshow.vue')
 
-export default new Router({
+const router = new Router({
   mode: 'history',
-  
+
   routes:  [
    
    {
@@ -41,15 +46,15 @@ export default new Router({
        path: '/Gallery/:ItemID',
        name: 'Gallery',
        component: Gallery,
-       props: true
-
+       props: true,
+       meta: { preserveScroll: true }
    },
    {
        path: '/DetailView/:ItemID',
        name: 'DetailView',
        component: GalleryItem,
-       props: true
-
+       props: true,
+       meta: { preserveScroll: true }
    },
    {
        path: '/Contact',
@@ -162,6 +167,45 @@ export default new Router({
     name: 'Ranch',
     component: Ranch,
 },
+{
+    path: '/SlideshowBuilder',
+    name: 'SlideshowBuilder',
+    component: SlideshowBuilder,
+},
+{
+    path: '/Slideshow',
+    name: 'Slideshow',
+    component: Slideshow,
+},
 ]
 })
+
+// Before leaving a route, save scroll position if it's a preserveScroll route
+router.beforeEach((to, from, next) => {
+  if (from.meta.preserveScroll) {
+    const container = document.getElementById('scrolling-techniques-3')
+    if (container) {
+      scrollPositions[from.fullPath] = container.scrollTop
+    }
+  }
+  next()
+})
+
+// After entering a route, restore or reset scroll
+router.afterEach((to) => {
+  const container = document.getElementById('scrolling-techniques-3')
+  if (!container) return
+
+  Vue.nextTick(() => {
+    if (to.meta.preserveScroll && scrollPositions[to.fullPath]) {
+      // Restore saved position for Gallery/DetailView
+      container.scrollTo({ top: scrollPositions[to.fullPath], behavior: 'instant' })
+    } else {
+      // Scroll to top for all other routes
+      container.scrollTo({ top: 0, behavior: 'instant' })
+    }
+  })
+})
+
+export default router
 
