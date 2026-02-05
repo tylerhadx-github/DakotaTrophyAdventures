@@ -485,17 +485,25 @@ export default {
 }
 
 .image-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .slideshow-image {
+  width: 100%;
+  height: 100%;
   max-width: 100%;
   max-height: 100vh;
+}
+
+.slideshow-image >>> .v-image__image {
+  background-position: center center !important;
 }
 
 .year-badge {
