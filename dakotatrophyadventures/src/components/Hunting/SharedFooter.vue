@@ -266,7 +266,7 @@
             <v-expansion-panel-content class="panel-content">
               <p class="guarantee-text">
                 <v-icon color="primary" class="mr-2">mdi-shield-check</v-icon>
-                We guarantee <strong>100% effort</strong> in assisting you to a trophy animal you'll be proud of.
+                <span>We guarantee <strong>100% effort</strong> in assisting you to a trophy animal you'll be proud of.</span>
               </p>
               <p>We can't control weather, marksmanship, or luck – but we'll do everything in our power to give you the best hunting experience possible.</p>
             </v-expansion-panel-content>
