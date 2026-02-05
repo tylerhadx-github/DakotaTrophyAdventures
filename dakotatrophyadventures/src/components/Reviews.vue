@@ -224,7 +224,7 @@ export default {
         },
         {
           images: [1401],
-          content: "I've been out to the Trask Family ranch twice to hunt Merriam turkeys. I can attest to why they call it a \"family\" ranch. Once you meet Tom, Shelia and the kids, you become family. They always make the trip worth wild and never fail to put you on birds to hunt. If you're looking to go to a place where you can't see a neighbor's lights at night or hear the hum of traffic on the nearby road, this is your place. The night skies are lit up by the stars and you may wake up to snow in April. You'll get to hunt your bird all alone or with help if needed. You'll see plenty of other game like mule deer and whitetail. You'll likely find some sheds or maybe even a fossil.",
+          content: "I've been out to the Trask Family ranch twice to hunt Merriam turkeys. I can attest to why they call it a \"family\" ranch. Once you meet Tom, Sheila and the kids, you become family. They always make the trip worthwhile and never fail to put you on birds to hunt. If you're looking to go to a place where you can't see a neighbor's lights at night or hear the hum of traffic on the nearby road, this is your place. The night skies are lit up by the stars and you may wake up to snow in April. You'll get to hunt your bird all alone or with help if needed. You'll see plenty of other game like mule deer and whitetail. You'll likely find some sheds or maybe even a fossil.",
           author: "Chad Lott"
         },
         {
@@ -254,7 +254,7 @@ export default {
         {
           images: [511],
           content:
-            "Having hunted several different areas across the west it seems that most of the prime trophy areas produce a few huge bucks but overall quality isn't that good and a lot of times not seeing any deer at all if the migration didn't happen due to weather. I have only hunted with Tom for two years but in those two years he has run 100 percent on mule deer and there wasn't any dinks. Each year I seen mature bucks taken over that 30 inch mark, getting one myself that went 29 — all mature heavy horned bucks usually with some trash and always one or two 180 plus.",
+            "Having hunted several different areas across the west it seems that most of the prime trophy areas produce a few huge bucks but overall quality isn't that good and a lot of times not seeing any deer at all if the migration didn't happen due to weather. I have only hunted with Tom for two years but in those two years he has run 100 percent on mule deer and there weren't any dinks. Each year I seen mature bucks taken over that 30 inch mark, getting one myself that went 29 — all mature heavy horned bucks usually with some trash and always one or two 180 plus.",
           author: "Jeff T.",
         },
         {
@@ -285,7 +285,7 @@ export default {
         },
         {
           content:
-            "My experience with Dakota Trophy Adventures was fabulous!! The amount and quality of game you see is incredible. The deer are managed very well, which increases the opportunity to harvest a quality animal. Tom and Shelia thank you for your hospitality and a hunt of a lifetime! I will be back!!",
+            "My experience with Dakota Trophy Adventures was fabulous!! The amount and quality of game you see is incredible. The deer are managed very well, which increases the opportunity to harvest a quality animal. Tom and Sheila thank you for your hospitality and a hunt of a lifetime! I will be back!!",
           author: "Steve E.",
         },
         {

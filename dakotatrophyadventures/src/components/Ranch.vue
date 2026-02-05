@@ -104,7 +104,7 @@
             <div class="timeline-content">
               <h3 class="timeline-title">A Partnership Forms</h3>
               <p>
-                In 1986, Tom married Shelia McDaniel. Shelia's roots are in northeast Philip, SD,
+                In 1986, Tom married Sheila McDaniel. Sheila's roots are in northeast Philip, SD,
                 where she grew up on a cattle and sheep ranch. Together, they have continued to ranch
                 and expand both the ranching and outfitting businesses. In 1987, Tom assumed the role
                 of booking for Dakota Trophy and has since expanded services to include turkey hunts,
@@ -120,7 +120,7 @@
             <div class="timeline-content">
               <h3 class="timeline-title">The Next Generation</h3>
               <p>
-                Tom and Shelia are proud parents of three children: Mark (born 1989), Mick (1991),
+                Tom and Sheila are proud parents of three children: Mark (born 1989), Mick (1991),
                 and Tomilyn (1993). All three attended the local rural school and graduated from
                 Philip High School. Today, they're all back home — actively involved in ranching,
                 hunting, guiding, cooking, and taxidermy. The family has also been blessed with two
@@ -266,7 +266,7 @@ export default {
     return {
       familyMembers: [
         { name: "Tom", role: "Founder & Guide", icon: "mdi-account-cowboy-hat", color: "linear-gradient(135deg, #4A6741 0%, #3a5231 100%)" },
-        { name: "Shelia", role: "Operations", icon: "mdi-account", color: "linear-gradient(135deg, #8B6914 0%, #6d5310 100%)" },
+        { name: "Sheila", role: "Operations", icon: "mdi-account", color: "linear-gradient(135deg, #8B6914 0%, #6d5310 100%)" },
         { name: "Mark", role: "Guide & Taxidermist", icon: "mdi-account", color: "linear-gradient(135deg, #5D4E37 0%, #4a3e2c 100%)" },
         { name: "Mick", role: "Guide & Taxidermist", icon: "mdi-account", color: "linear-gradient(135deg, #6B5B45 0%, #564a38 100%)" },
         { name: "Tomilyn", role: "Booking & Admin", icon: "mdi-account", color: "linear-gradient(135deg, #7D6E58 0%, #645847 100%)" },
