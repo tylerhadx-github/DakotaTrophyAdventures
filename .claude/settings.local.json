@@ -16,7 +16,10 @@
       "Bash(sort:*)",
       "Bash(cmd //c \"del /f /q nul\")",
       "Bash(cmd //c \"del \\\\\\\\?\\\\C:\\\\source\\\\github\\\\DakotaTrophyAdventures\\\\nul\")",
-      "Bash(powershell -Command \"Remove-Item -Path ''\\\\?\\\\C:\\\\source\\\\github\\\\DakotaTrophyAdventures\\\\nul'' -Force\")"
+      "Bash(powershell -Command \"Remove-Item -Path ''\\\\?\\\\C:\\\\source\\\\github\\\\DakotaTrophyAdventures\\\\nul'' -Force\")",
+      "Bash(dir:*)",
+      "Bash(tree:*)",
+      "WebFetch(domain:v2.vuetifyjs.com)"
     ]
   }
 }

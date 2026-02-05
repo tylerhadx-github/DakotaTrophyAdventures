@@ -1,159 +1,556 @@
 <template>
-  <div>
-    <v-row>
-      <v-col>
-        <v-card flat>
-          <v-card-title style="justify-content: center">
-            <h1 class="text-center home-title">
-              <span class="nowrap">Western South Dakota's</span> <span class="nowrap">Finest Hunting</span>
+  <div class="home-page">
+    <!-- Hero Welcome Section -->
+    <section class="hero-welcome fade-in-up" :class="{ visible: sectionsVisible.hero }">
+      <v-container>
+        <v-card flat class="welcome-card">
+          <v-card-text class="text-center">
+            <h1 class="hero-title">
+              <span class="nowrap">Western South Dakota's</span>
+              <span class="nowrap">Finest Hunting</span>
             </h1>
-          </v-card-title>
-          <v-card-text>
-            <div
-              style="align-items: center; justify-content: center"
-              class="text-center"
-            >
-              <v-btn to="/Contact" outlined>Contact Us</v-btn>
-            </div>
-            <br />
-
-            <p class="text-center">
-              Welcome to Dakota Trophy! Dakota Trophy is a multi-entity
-              operation primarily focused on mule deer, whitetail, antelope, and
-              turkey hunting in Western South Dakota. We also offer summertime
-              fossil hunting trips for the whole family, and fall/winter coyote
-              calling or thermal hunts as well as fishing and shed hunting. For
-              specific information on the hunts we offer, please look at the
-              Hunting tab. For information on the origins of Dakota Trophy and
-              our family – the ones who handle the booking and run the camp –
-              please continue reading below!
+            <p class="hero-subtitle">
+              Family-owned outfitter since 1965 - Trophy hunts across 140,000 acres
             </p>
-            <br />
-            <v-row>
-              <v-col md="4" cols="12">
-                <v-img
-                  :src="'/img/Deer/Mule%20Deer/Drefke%20MD%201.JPG'"
-                ></v-img>
-              </v-col>
-              <v-col md="8" cols="12" style="display: flex">
-                <p
-                  class="text-center pa-4 ma-4"
-                  style="
-                    place-content: center;
-                    display: flex;
-                    align-items: center;
-                  "
-                >
-                  Dakota Trophy Hunt is a corporation comprising our ranch and
-                  about 12 others, specializing in rifle Mule Deer and Whitetail
-                  hunting. Originally established as Dakota Safari in 1965,
-                  Dakota Trophy underwent a transformation in the 1980s when the
-                  group of ranchers decided to split into two organizations. We
-                  retained the camp and changed our name to Dakota Trophy, while
-                  the other organization kept the name and is based across the
-                  Cheyenne River from us. We have been managing the booking for
-                  Dakota Trophy Hunt since 1987, and the base camp is located at
-                  our ranch headquarters. This highly successful group of
-                  ranchers has harvested many Trophy Mule Deer and Whitetail
-                  over the years, covering approximately 140,000 acres of
-                  private land.
-                </p></v-col
-              >
-            </v-row>
-            <v-row>
-              <v-col md="8" cols="12" style="display: flex">
-                <p
-                  class="text-center pa-4 ma-4"
-                  style="
-                    place-content: center;
-                    display: flex;
-                    align-items: center;
-                  "
-                >
-                  Dakota Trophy Adventures operates a guiding service for a
-                  variety of hunts including Merriam turkeys in the spring,
-                  antelope, archery deer, and upland game birds (pheasant,
-                  sharptail grouse, chukar, and Hungarian partridge). While
-                  based out of the same camp, it is primarily a family business.
-                  We also offer fossil hunting trips for the whole family,
-                  fishing and shed hunting adventures, and thermal predator
-                  hunts for coyotes in the winter months.
-                </p></v-col
-              >
-              <v-col md="4" cols="12">
-                <v-img
-                  :src="'/img/Deer/Mule%20Deer/Newmans%20MD%20WT%202.JPG'"
-                ></v-img>
-              </v-col>
-            </v-row>
+            <v-btn
+              to="/Contact"
+              class="cta-button mt-6"
+              x-large
+              elevation="0"
+            >
+              Book Your Adventure
+            </v-btn>
           </v-card-text>
         </v-card>
-      </v-col>
-    </v-row>
-    <!-- <v-row>
-      <v-col
-        v-for="i in Featured"
-        :key="i.id"
-        cols="12"
-        sm="6"
-        style="width: 100%"
-        class="pa-4"
-      >
-        <v-img :src="i.image"></v-img>
-      </v-col>
-    </v-row> -->
+      </v-container>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose fade-in-up" :class="{ visible: sectionsVisible.whyChoose }">
+      <v-container>
+        <h2 class="section-title text-center">Why Choose Dakota Trophy</h2>
+        <v-row class="features-row">
+          <v-col cols="6" md="3" v-for="feature in features" :key="feature.title">
+            <div class="feature-card text-center">
+              <v-icon class="feature-icon" x-large>{{ feature.icon }}</v-icon>
+              <h3 class="feature-title">{{ feature.title }}</h3>
+              <p class="feature-desc">{{ feature.description }}</p>
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
+    </section>
+
+    <!-- About Section - Dakota Trophy Hunt -->
+    <section class="about-section fade-in-up" :class="{ visible: sectionsVisible.about1 }">
+      <v-container>
+        <v-row align="center">
+          <v-col cols="12" md="5">
+            <div class="image-container hover-lift">
+              <v-img
+                src="/img/Deer/Mule%20Deer/Drefke%20MD%201.JPG"
+                alt="Trophy mule deer hunt at Dakota Trophy Adventures"
+                class="rounded-image"
+                aspect-ratio="1.2"
+              >
+                <template v-slot:placeholder>
+                  <v-row class="fill-height ma-0" align="center" justify="center">
+                    <v-progress-circular indeterminate color="primary"></v-progress-circular>
+                  </v-row>
+                </template>
+              </v-img>
+            </div>
+          </v-col>
+          <v-col cols="12" md="7">
+            <div class="content-block">
+              <h2 class="section-title">Dakota Trophy Hunt</h2>
+              <p class="section-text">
+                Dakota Trophy Hunt is a corporation comprising our ranch and
+                about 12 others, specializing in rifle Mule Deer and Whitetail
+                hunting. Originally established as Dakota Safari in 1965,
+                Dakota Trophy underwent a transformation in the 1980s when the
+                group of ranchers decided to split into two organizations.
+              </p>
+              <p class="section-text">
+                We have been managing the booking for Dakota Trophy Hunt since 1987,
+                and the base camp is located at our ranch headquarters. This highly
+                successful group of ranchers has harvested many Trophy Mule Deer and
+                Whitetail over the years, covering approximately
+                <strong>140,000 acres</strong> of private land.
+              </p>
+              <v-btn
+                to="/Hunting/RifleDeer"
+                outlined
+                class="learn-more-btn mt-4"
+              >
+                Learn More
+                <v-icon right small>mdi-arrow-right</v-icon>
+              </v-btn>
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
+    </section>
+
+    <!-- About Section - Dakota Trophy Adventures -->
+    <section class="about-section alt-bg fade-in-up" :class="{ visible: sectionsVisible.about2 }">
+      <v-container>
+        <v-row align="center">
+          <v-col cols="12" md="7" order="2" order-md="1">
+            <div class="content-block">
+              <h2 class="section-title">Dakota Trophy Adventures</h2>
+              <p class="section-text">
+                Dakota Trophy Adventures operates a guiding service for a
+                variety of hunts including Merriam turkeys in the spring,
+                antelope, archery deer, and upland game birds (pheasant,
+                sharptail grouse, chukar, and Hungarian partridge).
+              </p>
+              <p class="section-text">
+                While based out of the same camp, it is primarily a family business.
+                We also offer fossil hunting trips for the whole family,
+                fishing and shed hunting adventures, and thermal predator
+                hunts for coyotes in the winter months.
+              </p>
+              <v-btn
+                to="/Hunting"
+                outlined
+                class="learn-more-btn mt-4"
+              >
+                Explore All Hunts
+                <v-icon right small>mdi-arrow-right</v-icon>
+              </v-btn>
+            </div>
+          </v-col>
+          <v-col cols="12" md="5" order="1" order-md="2">
+            <div class="image-container hover-lift">
+              <v-img
+                src="/img/Deer/Mule%20Deer/Newmans%20MD%20WT%202.JPG"
+                alt="Whitetail deer hunt at Dakota Trophy Adventures"
+                class="rounded-image"
+                aspect-ratio="1.2"
+              >
+                <template v-slot:placeholder>
+                  <v-row class="fill-height ma-0" align="center" justify="center">
+                    <v-progress-circular indeterminate color="primary"></v-progress-circular>
+                  </v-row>
+                </template>
+              </v-img>
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section fade-in-up" :class="{ visible: sectionsVisible.testimonial }">
+      <v-container>
+        <div class="testimonial-card text-center">
+          <v-icon class="quote-icon" x-large>mdi-format-quote-open</v-icon>
+          <blockquote class="testimonial-text">
+            "I saw at least 5 mature bucks on my first day of hunting. I harvested an old mature
+            28-inch wide 170+ class mule deer buck. Dakota Trophy Adventures has carefully managed
+            both the quantity and quality of bucks on their lands for over 50 years. I literally
+            saw several hundred mule deer with more than 20 being 5+ year old bucks."
+          </blockquote>
+          <p class="testimonial-author">- Mitch Engle</p>
+          <v-btn
+            to="/Reviews"
+            text
+            class="mt-4"
+            color="primary"
+          >
+            Read More Reviews
+            <v-icon right small>mdi-arrow-right</v-icon>
+          </v-btn>
+        </div>
+      </v-container>
+    </section>
+
+    <!-- Popular Hunts Section -->
+    <section class="popular-hunts fade-in-up" :class="{ visible: sectionsVisible.hunts }">
+      <v-container>
+        <h2 class="section-title text-center">Popular Hunts</h2>
+        <v-row>
+          <v-col cols="6" md="3" v-for="hunt in popularHunts" :key="hunt.name">
+            <v-card
+              :to="hunt.route"
+              class="hunt-preview-card hover-lift"
+              flat
+            >
+              <v-img
+                :src="hunt.image"
+                :alt="hunt.name + ' hunting at Dakota Trophy'"
+                aspect-ratio="1"
+                class="hunt-image"
+              >
+                <div class="hunt-overlay">
+                  <span class="hunt-name">{{ hunt.name }}</span>
+                </div>
+              </v-img>
+            </v-card>
+          </v-col>
+        </v-row>
+        <div class="text-center mt-6">
+          <v-btn
+            to="/Hunting"
+            class="cta-button"
+            elevation="0"
+          >
+            View All Hunts
+          </v-btn>
+        </div>
+      </v-container>
+    </section>
   </div>
 </template>
 
 <script>
 export default {
   name: "Home",
-  components: {},
-  methods: {
-    getdata() {},
-    openContactForm() {
-      this.$router.push({ name: "Contact" });
-    },
-  },
-  data: function () {
+
+  data() {
     return {
-      Home: '<p align="left" style="color: rgb(0, 0, 0); font-family: Tahoma, Geneva, sans-serif; font-size: medium;"><font face="Tahoma">Welcome to Dakota Trophy! Dakota Trophy is a multi-entity operation primarily focused on mule deer,whitetail, antelope, and turkey hunting in Western South Dakota. For specific information on the hunts we offer, please look at the Hunting tab. For information on the origins of Dakota Trophy and our family– the ones who do the booking and run the camp, please continue to read below! The Spanish Five Ranch of Wasta, South Dakota is owned and operated by Tom and Shelia Trask andtheir children, Mark, Mick, and Tomilyn. The ranch covers nearly 20,000 acres along the Cheyenne andElk Creek tributaries. Dakota Trophy Adventures is a diverse business involving everything to do withhunting and outdoor recreation from trophy Mule Deer and Whitetail to Antelope and Merriam turkeys.The ranch includes cattle, registered quarter horses, and personal hunting trips from Alaska to Africa,many provinces in Canada, numerous western United States and as far south as New Zealand andAustralia. Dakota Trophy Adventures is in the business of helping and assisting clients locate greathunting areas and enjoy hunting and the great outdoors! We love to give great recommendations foroutfitters that we have hunted with all over the world. Dakota Trophy Hunt is a corporation of our ranch and about 12 others for the purpose of rifle Mule Deerand Whitetail hunting. Dakota Trophy was originally started as Dakota Safari in 1965. In the 1980s, thegroup of ranchers decided to split up into two organizations. We kept the camp and changed our nameto Dakota Trophy, the other organization kept the name and is based across the Cheyenne river from us.We have done the booking for Dakota Trophy Hunt since 1987 and the base camp is at our ranchheadquarters. This very successful group of ranchers have taken many Trophy Mule Deer and Whitetailover the years. The area encompasses around 140,000 acres of private land.Dakota Trophy Adventures runs a guiding service for Merriam turkeys in the spring, as well as antelopehunts and any archery deer hunts. It is based out of the same camp, but is primarily more of a familybusiness. Trask FamilyThe ranch we live on is on the prairie of South Dakota and an old family ranch of Tom’s parents, Markand Winnie Trask. Tom Trask was born and raised in the Elm Springs area. His father was instrumental instarting a commercial hunting operation in 1965 in addition to ranching in the Elm Springs area. Hisgrandfather, Mack Trask, homestead at the forks of the Cheyenne and Belle Fourche rivers north of ourcurrent location. Thus, Tom grew up in the business of ranching and hunting. He spent winters as ayoung boy trapping with his father and summers hunting fossils with his mother. Tom attended the localcountry school in Meade County. A teacher once said he looked forward to the morning report fromTom on what all he had hunted since school was out one day to the start of the next! Tom attended highschool in Sturgis. Following graduation he tried college at SDSU for a semester but when he came homefor Christmas his dad and the cattle needed his help for the tough winter they were in for. He was in partnership with his brother for a few years and in 1985 they separated the operation. Tommarried Shelia McDaniel in 1986 and they still continue to ranch and expand both the ranching andoutfitting businesses.Shelia grew up northeast of Philip, SD on a cattle and sheep ranch and also attended a rural school thenwent on to high school in Philip. At one point in her country school days, the boy to girl ratio was 13-1,thus she did as the boys did – riding horseback to school and hunting rabbits on the way. Aftergraduation, Shelia attended SDSU and then graduated from BHSU with a degree in business andeducation.Tom took the job of booking for Dakota Trophy in 1987 and has expanded it into other areas: turkey,antelope and archery hunting. In addition to hunting, at home and around the world, we put up hay,raise cattle, and still raise a few quarter horses. It’s not uncommon to see a hay field with all of thefamily running machinery or a pasture or corral with everyone working cattle.Tom and Shelia have 3 children. After serving hunters dinner (in 1989) Tom took Shelia to the hospitalwhere was Mark was born premature – although you wouldn’t know it today. Mick was born in 1991and Tomilyn in 1993. They all attended the local rural school until Mark went to high school where itwas decided to send them all to school in Philip. All three graduated high school from Philip. The boyswent on to brief college careers and taxidermy school. They are both currently home ranching, hunting,and doing taxidermy. Tomilyn went to college and graduated with a degree in Mathematics Education.She currently lives at home and in involved in the ranch as well as doing the booking and paperwork forDakota Trophy! You will find all three of them guiding, cooking, skipping/caping and meat processingduring your time at Dakota Trophy. We have also been blessed with 2 grandchildren – Levi and Annie.They attend the same rural school that Tom, Mark, Mick, and Tomilyn did, making them the firstchildren to be third generation students at Elm Springs School! Levi was born in 2010 and Annie in 2014– they both live on the ranch and are involved in helping as much as they can while not at school orother activities. We enjoy hunting ourselves and do so whenever time and finances allow! We have hunted numerousprovinces in Canada, as well as Alaska and many states in the lower 48. We also have outfitterconnections in Africa, New Zealand and Australia. We love to talk hunting and we know some greatpeople in the world of hunting! Possibly we can help, advise, or assist you in booking a hunt with aquality, reliable outfitter! We don’t recommend anyone that we have not personally hunted with. Pleasecheck under the Reviews tab for links to outfitters we recommend! Along with hunting comes with the preservation of trophies. Tom has done some taxidermy for ourpurposes. Currently, Mark and Mick have taken up the business of taxidermy having studied under TomMatuska of Northwest Iowa School of Taxidermy. They work on taxidermy mostly during the wintermonths or whenever they get time in between ranching obligations. Please look at the Taxidermy tab formore information on Dakota Trophy Taxidermy!To talk hunting, cattle, or horses – please contact us as we’d love to visit with you!',
-      Featured: [
+      sectionsVisible: {
+        hero: false,
+        whyChoose: false,
+        about1: false,
+        about2: false,
+        testimonial: false,
+        hunts: false,
+      },
+      features: [
         {
-          image: "/img/Deer/Mule%20Deer/Drefke%20MD%201.JPG",
+          icon: "mdi-calendar-clock",
+          title: "60+ Years",
+          description: "Guiding hunters since 1965",
         },
         {
-          image: "/img/Deer/Mule%20Deer/Newmans%20MD%20WT%202.JPG",
-          title: "History",
-          description: this.History,
+          icon: "mdi-home-group",
+          title: "Base Camp",
+          description: "Comfortable ranch lodging",
+        },
+        {
+          icon: "mdi-account-group",
+          title: "Family Run",
+          description: "Three generations of expertise",
+        },
+        {
+          icon: "mdi-trophy",
+          title: "Trophy Quality",
+          description: "140,000 acres of prime land",
+        },
+      ],
+      popularHunts: [
+        {
+          name: "Rifle Deer",
+          route: "/Hunting/RifleDeer",
+          image: "/img/rifledeer.jpg",
+        },
+        {
+          name: "Turkey",
+          route: "/Hunting/Turkey",
+          image: "/img/Turkey/Solomons and Baumans 2013.jpg",
+        },
+        {
+          name: "Antelope",
+          route: "/Hunting/Antelope",
+          image: "/img/Antelope/2023/IMG_6281.jpg",
+        },
+        {
+          name: "Upland Game",
+          route: "/Hunting/UplandGame",
+          image: "/img/UplandGame/hunters-pheasants.png",
         },
       ],
     };
   },
-  mounted: function () {
-    this.getdata();
+
+  mounted() {
+    // Trigger animations after mount
+    setTimeout(() => {
+      this.sectionsVisible.hero = true;
+    }, 100);
+    setTimeout(() => {
+      this.sectionsVisible.whyChoose = true;
+    }, 300);
+    setTimeout(() => {
+      this.sectionsVisible.about1 = true;
+    }, 500);
+    setTimeout(() => {
+      this.sectionsVisible.about2 = true;
+    }, 700);
+    setTimeout(() => {
+      this.sectionsVisible.testimonial = true;
+    }, 900);
+    setTimeout(() => {
+      this.sectionsVisible.hunts = true;
+    }, 1100);
+
+    // Setup intersection observer for scroll animations
+    this.setupScrollAnimations();
   },
-  computed: {
-    windowSize: function () {
-      return { x: window.innerWidth, y: window.innerHeight };
+
+  methods: {
+    setupScrollAnimations() {
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+
+        document.querySelectorAll('.fade-in-up').forEach((el) => {
+          observer.observe(el);
+        });
+      }
     },
   },
 };
 </script>
 
 <style scoped>
-.home-title {
-  font-size: 1.8rem;
-  line-height: 1.3;
+/* Hero Section */
+.hero-welcome {
+  padding: 40px 0 60px;
+}
+
+.welcome-card {
+  background: transparent !important;
+}
+
+.hero-title {
+  font-family: var(--font-heading) !important;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--color-text);
+  opacity: 0.8;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .nowrap {
-  white-space: nowrap;
+  display: block;
 }
 
+/* Why Choose Section */
+.why-choose {
+  padding: 60px 0;
+  background: white;
+}
+
+.features-row {
+  margin-top: 40px;
+}
+
+.feature-card {
+  padding: 24px 16px;
+}
+
+.feature-icon {
+  color: var(--color-primary) !important;
+  margin-bottom: 16px;
+}
+
+.feature-title {
+  font-family: var(--font-heading) !important;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.feature-desc {
+  font-size: 0.9rem;
+  color: var(--color-text);
+  opacity: 0.7;
+}
+
+/* Section Titles */
+.section-title {
+  font-family: var(--font-heading) !important;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* About Sections */
+.about-section {
+  padding: 80px 0;
+}
+
+.about-section.alt-bg {
+  background: white;
+}
+
+.image-container {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-image {
+  border-radius: 8px;
+}
+
+.content-block {
+  padding: 20px 0;
+}
+
+.section-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--color-text);
+  margin-bottom: 16px;
+}
+
+.learn-more-btn {
+  color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  font-family: var(--font-heading) !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+  padding: 80px 0;
+  background: var(--color-primary);
+}
+
+.testimonial-card {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.quote-icon {
+  color: white !important;
+  opacity: 0.6;
+}
+
+.testimonial-text {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: white;
+  line-height: 1.6;
+  margin: 24px 0;
+}
+
+.testimonial-author {
+  color: #F5D77A;  /* Bright gold/yellow for better contrast */
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.testimonial-section .v-btn {
+  color: white !important;
+}
+
+/* Popular Hunts Section */
+.popular-hunts {
+  padding: 80px 0;
+  background: white;
+}
+
+.hunt-preview-card {
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.hunt-image {
+  position: relative;
+}
+
+.hunt-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  padding: 40px 16px 16px;
+}
+
+.hunt-name {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Mobile Styles */
 @media (max-width: 600px) {
-  .home-title {
-    font-size: 1.4rem;
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .about-section {
+    padding: 48px 0;
+  }
+
+  .content-block {
+    padding: 24px 0 0;
+  }
+
+  .feature-card {
+    padding: 16px 8px;
+  }
+
+  .feature-title {
+    font-size: 0.95rem;
+  }
+
+  .feature-desc {
+    font-size: 0.8rem;
+  }
+
+  .testimonial-text {
+    font-size: 1.1rem;
+  }
+
+  .testimonial-card {
+    padding: 24px 16px;
+  }
+
+  .hunt-name {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .content-block {
+    text-align: center;
+  }
+
+  .learn-more-btn {
+    margin: 16px auto 0;
   }
 }
 </style>

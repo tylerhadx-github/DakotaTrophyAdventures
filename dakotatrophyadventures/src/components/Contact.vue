@@ -1,10 +1,18 @@
 <template>
-  <div>
-    <v-card :height="windowSize.y" v-if="!sentMessage">
-      <v-card-title style="justify-content: center">
-        <h3 class="headline mb-0">Contact Us</h3>
-      </v-card-title>
-      <v-card-text class="contact-content">
+  <div class="contact-page">
+    <!-- Page Header -->
+    <section class="page-header">
+      <v-container>
+        <h1 class="page-title text-center">Contact Us</h1>
+        <p class="page-subtitle text-center">
+          Ready to book your hunt? Get in touch with us today.
+        </p>
+      </v-container>
+    </section>
+
+    <v-container>
+      <v-card class="contact-card" v-if="!sentMessage" flat>
+        <v-card-text class="contact-content">
         <v-row class="mb-2">
           <v-col cols="12" class="contact-item">
             <v-btn
@@ -98,10 +106,11 @@
                   value="Contact Form Submission"
                 />
               </fieldset>
-              <input type="submit" value="Submit" /></form></v-col
+              <input type="submit" value="Submit" class="cta-button" /></form></v-col
         ></v-row>
       </v-card-text>
     </v-card>
+    </v-container>
   </div>
 </template>
 
@@ -135,15 +144,48 @@ export default {
   mounted: function () {
     this.getdata();
   },
-  computed: {
-    windowSize: function () {
-      return { x: window.innerWidth, y: window.innerHeight };
-    },
-  },
+  computed: {},
 };
 </script>
 
-<style>
+<style scoped>
+.contact-page {
+  min-height: 100vh;
+}
+
+/* Page Header */
+.page-header {
+  padding: 40px 0 48px;
+  text-align: center;
+}
+
+.page-title {
+  font-family: var(--font-heading) !important;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+
+.page-subtitle {
+  font-size: 1.1rem;
+  color: var(--color-text);
+  opacity: 0.7;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Contact Card */
+.contact-card {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  padding: 32px;
+  background: white;
+  border-radius: 12px;
+}
+
 /* Contact info styling */
 .contact-content {
   max-width: 600px;
@@ -154,18 +196,34 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  color: black;
-  font-family: Tahoma, Geneva, sans-serif;
+  color: var(--color-text);
+  font-family: var(--font-body);
   font-size: 16px;
 }
 
 .contact-label {
   margin-top: 4px;
-  color: #333;
+  color: var(--color-text);
+  opacity: 0.8;
 }
 
 /* Mobile adjustments */
 @media (max-width: 600px) {
+  .page-title {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  .page-subtitle {
+    font-size: 1rem;
+    padding: 0 16px;
+  }
+
+  .contact-card {
+    padding: 24px 16px;
+    margin: 0 16px 40px;
+  }
+
   .contact-item .v-btn {
     width: 100%;
     justify-content: center;
