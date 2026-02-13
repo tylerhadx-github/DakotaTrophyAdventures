@@ -133,6 +133,12 @@ export default {
           url: "/img/Predator/IMG_1259.jpg",
           description: "Coyote and predator hunting photos.",
         },
+        {
+          galleryId: 12,
+          name: "Upland Game",
+          url: "/img/UplandGame/2025/pheasant-fence.png",
+          description: "Pheasant, chukar, grouse and partridge hunting photos.",
+        },
       ],
     };
   },

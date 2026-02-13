@@ -80,6 +80,12 @@ const paths = [
     changefreq: 'yearly'
   },
   {
+    path: '/Gallery/12',
+    lastmod: '2024-01-22',
+    priority: 0.9,
+    changefreq: 'yearly'
+  },
+  {
     path: '/Hunting',
     lastmod: '2024-01-22',
     priority: 0.9,

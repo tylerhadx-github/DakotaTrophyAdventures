@@ -98,6 +98,93 @@
       </v-container>
     </section>
 
+    <!-- Photo Gallery -->
+    <section class="gallery-section">
+      <v-container>
+        <!-- Gallery Title -->
+        <v-row class="mb-8">
+          <v-col cols="12" class="text-center">
+            <h2 class="section-title">Hunt Moments</h2>
+          </v-col>
+        </v-row>
+
+        <!-- First Row: 3 Images -->
+        <v-row>
+          <v-col cols="12" md="4">
+            <div class="gallery-image hover-lift">
+              <v-img
+                src="/img/UplandGame/2025/pheasant-fence.png"
+                aspect-ratio="1.5"
+                class="rounded-image"
+              ></v-img>
+            </div>
+          </v-col>
+          <v-col cols="12" md="4">
+            <div class="gallery-image hover-lift">
+              <v-img
+                src="/img/UplandGame/2025/hunters-with-dog.png"
+                aspect-ratio="1.5"
+                class="rounded-image"
+              ></v-img>
+            </div>
+          </v-col>
+          <v-col cols="12" md="4">
+            <div class="gallery-image hover-lift">
+              <v-img
+                src="/img/UplandGame/2025/hunter-group-tractor.png"
+                aspect-ratio="1.5"
+                class="rounded-image"
+              ></v-img>
+            </div>
+          </v-col>
+        </v-row>
+
+        <!-- Second Row: 3 Images -->
+        <v-row class="mt-6">
+          <v-col cols="12" md="4">
+            <div class="gallery-image hover-lift">
+              <v-img
+                src="/img/UplandGame/2025/sharptail-group.png"
+                aspect-ratio="1.5"
+                class="rounded-image"
+              ></v-img>
+            </div>
+          </v-col>
+          <v-col cols="12" md="4">
+            <div class="gallery-image hover-lift">
+              <v-img
+                src="/img/UplandGame/2025/hunters-pheasants.png"
+                aspect-ratio="1.5"
+                class="rounded-image"
+              ></v-img>
+            </div>
+          </v-col>
+          <v-col cols="12" md="4">
+            <div class="gallery-image hover-lift">
+              <v-img
+                src="/img/UplandGame/2025/sunset-hunt.png"
+                aspect-ratio="1.5"
+                class="rounded-image"
+              ></v-img>
+            </div>
+          </v-col>
+        </v-row>
+
+        <!-- Third Row: 1 Image (Centered) -->
+        <v-row class="mt-6">
+          <v-col cols="12" md="4" offset-md="4">
+            <div class="gallery-image hover-lift">
+              <v-img
+                src="/img/UplandGame/2025/pheasants-display.png"
+                aspect-ratio="1.5"
+                class="rounded-image"
+              ></v-img>
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
+    </section>
+
     <shared-footer></shared-footer>
   </div>
 </template>
@@ -297,6 +384,24 @@ export default {
   opacity: 0.7;
 }
 
+/* Gallery Section */
+.gallery-section {
+  padding: 60px 0;
+  background: white;
+}
+
+.gallery-image {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
 /* Mobile adjustments */
 @media (max-width: 960px) {
   .page-title {
@@ -313,11 +418,19 @@ export default {
     padding: 40px 0;
   }
 
+  .gallery-section {
+    padding: 40px 0;
+  }
+
   .section-title {
     font-size: 1.5rem;
   }
 
   .species-card {
+    margin-bottom: 16px;
+  }
+
+  .gallery-image {
     margin-bottom: 16px;
   }
 

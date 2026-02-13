@@ -5246,4 +5246,11 @@ export let
         { "imageGalleryId": 4, "url": "/img/Turkey/2025/Todd and Logan.jpeg", "imageId": 1556 },
         { "imageGalleryId": 4, "url": "/img/Turkey/2025/Todd.jpeg", "imageId": 1557 },
         { "imageGalleryId": 4, "url": "/img/Turkey/2025/turkey2.jpeg", "imageId": 1558 },
+        { "imageGalleryId": 12, "url": "/img/UplandGame/2025/pheasant-fence.png", "imageId": 1559 },
+        { "imageGalleryId": 12, "url": "/img/UplandGame/2025/hunters-with-dog.png", "imageId": 1560 },
+        { "imageGalleryId": 12, "url": "/img/UplandGame/2025/hunter-group-tractor.png", "imageId": 1561 },
+        { "imageGalleryId": 12, "url": "/img/UplandGame/2025/sharptail-group.png", "imageId": 1562 },
+        { "imageGalleryId": 12, "url": "/img/UplandGame/2025/hunters-pheasants.png", "imageId": 1563 },
+        { "imageGalleryId": 12, "url": "/img/UplandGame/2025/sunset-hunt.png", "imageId": 1564 },
+        { "imageGalleryId": 12, "url": "/img/UplandGame/2025/pheasants-display.png", "imageId": 1565 },
     ];

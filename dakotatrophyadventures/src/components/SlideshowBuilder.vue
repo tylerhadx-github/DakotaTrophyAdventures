@@ -178,6 +178,7 @@ export default {
         { id: 3, name: "Antelope" },
         { id: 4, name: "Turkey" },
         { id: 11, name: "Predator" },
+        { id: 12, name: "Upland Game" },
       ],
       gridOptions: [
         { label: "2×2", value: 4, icon: "mdi-grid", cols: 2, rows: 2 },
